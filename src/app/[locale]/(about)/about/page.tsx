@@ -2,65 +2,160 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import { TextReveal } from '@/components/motion/TextReveal';
+import { cn } from '@/lib/utils';
 
 export default function AboutPage() {
     const t = useTranslations('AboutPage');
 
-    const paragraphs = [
-        'p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9'
-    ];
+    const fadeInUp = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
+    };
 
     return (
-        <div className="min-h-screen bg-[#0f172a] text-white py-32 px-4 md:px-8 flex flex-col items-center">
-            {/* Header */}
-            <header className="max-w-4xl mx-auto text-center mb-20 w-full">
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium mb-6 tracking-tight text-amber-400"
-                >
-                    {t('title')}
-                </motion.h1>
+        <div className="min-h-screen bg-[#0f172a] text-white pt-32 pb-24 px-4 md:px-8 overflow-hidden">
+            {/* Background Texture */}
+            <div className="fixed inset-0 pointer-events-none opacity-[0.03]"
+                style={{ backgroundImage: 'url("/images/noise.png")' }} // Optional noise texture if available, or just keeping it subtle
+            />
 
-                <motion.p
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2, duration: 0.8 }}
-                    className="text-xl md:text-2xl text-slate-300 font-light italic mb-12"
-                    style={{ fontFamily: 'var(--font-heebo), sans-serif' }}
-                >
-                    {t('subtitle')}
-                </motion.p>
+            <div className="max-w-7xl mx-auto relative z-10">
 
-                <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-amber-400/50 to-transparent mx-auto mb-20" />
-
-                <div className="space-y-10 text-lg md:text-xl text-slate-300 leading-relaxed font-light max-w-3xl mx-auto text-start">
-                    {paragraphs.map((key, index) => (
-                        <motion.p
-                            key={key}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-10%" }}
-                            transition={{ delay: index * 0.05, duration: 0.6 }}
+                {/* 1. HERO SECTION */}
+                <header className="text-center mb-24 md:mb-32">
+                    <div className="mb-6 overflow-hidden">
+                        <TextReveal
+                            className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-white mb-2"
+                            delay={0.2}
                         >
-                            {t(key)}
-                        </motion.p>
-                    ))}
+                            {t('title')}
+                        </TextReveal>
+                    </div>
 
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={fadeInUp}
+                    >
+                        <p className="text-lg md:text-2xl text-amber-400 font-light tracking-[0.2em] uppercase mb-12"
+                            style={{ fontFamily: 'var(--font-heebo), sans-serif' }}>
+                            {t('subtitle')}
+                        </p>
+                        <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto" />
+                    </motion.div>
+                </header>
+
+
+                {/* 2. INTRO (The Hook) */}
+                <section className="max-w-4xl mx-auto text-center mb-24 md:mb-32">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, margin: "-10%" }}
+                        variants={fadeInUp}
+                        className="space-y-8"
+                    >
+                        <p className="text-2xl md:text-4xl leading-relaxed font-serif text-slate-200">
+                            {t('p1')}
+                        </p>
+                        <p className="text-xl md:text-2xl leading-relaxed text-slate-400 font-light">
+                            {t('p2')}
+                        </p>
+                    </motion.div>
+                </section>
+
+
+                {/* 3. THE STORY (Editorial Grid) */}
+                <section className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 mb-24 md:mb-32 items-start">
+                    {/* Left Column (Sticky Title or Accent) */}
+                    <div className="md:col-span-4 md:sticky md:top-32">
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <span className="text-9xl font-serif text-white/5 absolute -top-12 -left-8 -z-10 select-none">
+                                SEDER
+                            </span>
+                            <h3 className="text-3xl font-bold text-white mb-4 uppercase tracking-widest">
+                                {t('title').split(' ')[0]} {/* "The" or first word */}
+                            </h3>
+                            <div className="w-12 h-1 bg-amber-500 mb-6" />
+                            <p className="text-slate-400 text-sm leading-loose">
+                                {t('p3').substring(0, 120)}...
+                            </p>
+                        </motion.div>
+                    </div>
+
+                    {/* Right Column (Narrative) */}
+                    <div className="md:col-span-8 space-y-12">
+                        {['p3', 'p4', 'p5', 'p6', 'p7'].map((key, i) => (
+                            <motion.div
+                                key={key}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, margin: "-10%" }}
+                                variants={fadeInUp}
+                                transition={{ delay: i * 0.1 }}
+                            >
+                                <p className={cn(
+                                    "text-lg md:text-xl leading-8 text-slate-300 font-light",
+                                    i === 0 && "first-letter:text-5xl first-letter:font-serif first-letter:text-amber-400 first-letter:float-left first-letter:mr-3 first-letter:mt-1"
+                                )}>
+                                    {t(key)}
+                                </p>
+                            </motion.div>
+                        ))}
+                    </div>
+                </section>
+
+
+                {/* 4. SYNTHESIS (Blockquote) */}
+                <section className="max-w-5xl mx-auto mb-24 md:mb-32">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.4, duration: 0.8 }}
-                        className="pt-12 text-center"
+                        transition={{ duration: 0.8 }}
+                        className="relative bg-white/5 border border-white/10 p-12 md:p-20 rounded-sm text-center"
                     >
-                        <p className="text-2xl md:text-3xl font-serif text-amber-400">
+                        <span className="text-6xl font-serif text-amber-400/20 absolute top-8 left-8">“</span>
+                        <p className="text-2xl md:text-4xl font-serif italic text-white leading-normal relative z-10">
+                            {t('p8')}
+                        </p>
+                        <span className="text-6xl font-serif text-amber-400/20 absolute bottom-8 right-8">”</span>
+                    </motion.div>
+                </section>
+
+
+                {/* 5. CONCLUSION */}
+                <section className="max-w-3xl mx-auto text-center space-y-12 mb-20">
+                    <motion.p
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={fadeInUp}
+                        className="text-lg md:text-xl text-slate-400 leading-relaxed"
+                    >
+                        {t('p9')}
+                    </motion.p>
+
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={fadeInUp}
+                        className="pt-12"
+                    >
+                        <p className="text-3xl md:text-5xl font-serif text-amber-400 tracking-wide">
                             {t('closing')}
                         </p>
                     </motion.div>
-                </div>
-            </header>
+                </section>
+
+            </div>
         </div>
     );
 }

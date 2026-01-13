@@ -15,7 +15,7 @@
         },
         "founder": {
             "label": "LE FONDATEUR",
-            "title": "L'AUTORITÉ",
+            "title": "L'ENGAGEMENT",
             "name": "RAPHAËL D. SKOURI",
             "role": "CEO & FOUNDER",
             "stats": {
@@ -25,7 +25,7 @@
             "manifesto": "Seder Group est plus qu'une structure, c'est l'union de trois départements complémentaires capables de produire votre vision. Notre mission est de mettre à disposition nos compétences et notre réseau afin de mener à bien vos projets et quêtes vers la réussite et l'excellence."
         },
         "gateway": {
-            "title": "CHOISIR UN DÉPARTEMENT",
+            "title": "NOS DÉPARTEMENTS",
             "enter": "ENTRER",
             "explore": "EXPLORER",
             "items": {
@@ -87,7 +87,7 @@
     "EventsPage": {
         "title": "Seder Events",
         "intro": "Seder Events est la maison événementielle de Seder Group : un département dédié à la création, la direction artistique et l’exécution d’événements qui doivent marquer une vie.",
-        "approach": "Notre approche ne se limite pas à “organiser”. Nous orchestrons : conception du concept, narration, design, scénographie, sélection des meilleurs partenaires, planning, coordination terrain, gestion des imprévus, et une exécution au millimètre — pour que le client vive son moment, pas sa logistique.",
+        "approach": "Notre approche ne se limite pas à “organiser”. Nous orchestrons : conception du projet, narration, design, scénographie, sélection des meilleurs partenaires, planning, coordination terrain, gestion des imprévus, et une exécution au millimètre — pour que le client vive son moment, pas sa logistique.",
         "expertise_title": "Une expertise rare : Jérusalem",
         "point1_title": "Exigence de production",
         "point1_desc": "Standards techniques, fluidité, précision.",

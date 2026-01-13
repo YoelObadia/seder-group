@@ -15,7 +15,7 @@
         },
         "founder": {
             "label": "THE FOUNDER",
-            "title": "THE AUTHORITY",
+            "title": "THE COMMITMENT",
             "name": "RAPHAËL D. SKOURI",
             "role": "CEO & FOUNDER",
             "stats": {
@@ -25,7 +25,7 @@
             "manifesto": "Seder Group is more than a structure, it is the union of three complementary departments capable of producing your vision. Our mission is to make our skills and network available in order to carry out your projects and quests towards success and excellence."
         },
         "gateway": {
-            "title": "CHOOSE A DEPARTMENT",
+            "title": "OUR DEPARTMENTS",
             "enter": "ENTER",
             "explore": "EXPLORE",
             "items": {

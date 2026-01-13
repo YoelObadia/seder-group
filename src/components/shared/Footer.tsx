@@ -7,6 +7,7 @@ import { Mail, Instagram, Linkedin, Twitter } from 'lucide-react';
 
 export function Footer() {
     const t = useTranslations('Footer');
+    const tNav = useTranslations('Navigation');
 
     return (
         <footer className="bg-slate-950 text-slate-400 py-12 md:py-20 border-t border-slate-900 w-full">
@@ -37,9 +38,10 @@ export function Footer() {
                     <div className="flex flex-col gap-4">
                         <h4 className="text-white font-bold uppercase text-xs md:text-sm tracking-widest mb-2">{t('explore')}</h4>
                         <div className="flex flex-col gap-3 text-sm md:text-base">
-                            <Link href="/business" className="hover:text-white transition-colors w-fit">Business</Link>
-                            <Link href="/events" className="hover:text-white transition-colors w-fit">Events</Link>
-                            <Link href="/music" className="hover:text-white transition-colors w-fit">Music</Link>
+                            <Link href="/music" className="hover:text-white transition-colors w-fit">{tNav('music')}</Link>
+                            <Link href="/events" className="hover:text-white transition-colors w-fit">{tNav('events')}</Link>
+                            <Link href="/uhnwi" className="hover:text-white transition-colors w-fit">{tNav('uhnwi')}</Link>
+                            <Link href="/business" className="hover:text-white transition-colors w-fit">{tNav('business')}</Link>
                         </div>
                     </div>
 
