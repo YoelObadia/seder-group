@@ -12,7 +12,7 @@ export default function BusinessPage() {
     const { business } = verticals;
 
     return (
-        <div className="min-h-screen bg-[#0B1221] text-white py-24 px-4 md:px-8 flex flex-col items-center">
+        <div className="min-h-screen text-white py-24 px-4 md:px-8 flex flex-col items-center">
             <BackButton theme="dark" />
             {/* Header / Intro */}
             <header className="max-w-4xl mx-auto text-center mb-24">

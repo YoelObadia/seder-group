@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { HeroBackground } from './HeroBackground';
 import { cn } from '@/lib/utils';
+import { TextReveal } from '@/components/motion/TextReveal';
 
 interface HeroSectionProps {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -93,13 +94,14 @@ export function HeroSection({
                 <motion.div variants={fadeUpVariants} className="w-24 h-[1px] bg-white/30 mb-8" />
 
                 {/* 4. Subtitle */}
-                <motion.h2
-                    variants={fadeUpVariants}
-                    className="text-sm md:text-lg lg:text-xl font-medium text-slate-300 uppercase tracking-[0.3em] mb-4"
-                    style={{ fontFamily: 'var(--font-heebo), sans-serif' }}
-                >
-                    {heroContent.subtitle}
-                </motion.h2>
+                <div className="mb-4">
+                    <TextReveal
+                        className="text-sm md:text-lg lg:text-xl font-medium text-slate-300 uppercase tracking-[0.3em]"
+                        delay={0.8}
+                    >
+                        {heroContent.subtitle}
+                    </TextReveal>
+                </div>
 
                 {/* 5. Motto */}
                 <motion.p
