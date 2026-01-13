@@ -1,12 +1,15 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { motion, Variants } from 'framer-motion';
 import { TextReveal } from '@/components/motion/TextReveal';
 import { cn } from '@/lib/utils';
 
 export default function AboutPage() {
     const t = useTranslations('AboutPage');
+    const locale = useLocale();
+    const isRtl = locale === 'he';
 
     const fadeInUp: Variants = {
         hidden: { opacity: 0, y: 30 },
@@ -14,7 +17,7 @@ export default function AboutPage() {
     };
 
     return (
-        <div className="min-h-screen bg-[#0f172a] text-white pt-32 pb-24 px-4 md:px-8 overflow-hidden">
+        <div className="min-h-screen bg-[#0f172a] text-white pt-32 pb-24 px-4 md:px-8 overflow-hidden" dir={isRtl ? 'rtl' : 'ltr'}>
             {/* Background Texture */}
             <div className="fixed inset-0 pointer-events-none opacity-[0.03]"
                 style={{ backgroundImage: 'url("/images/noise.png")' }} // Optional noise texture if available, or just keeping it subtle
@@ -71,13 +74,16 @@ export default function AboutPage() {
                     {/* Left Column (Sticky Title or Accent) */}
                     <div className="md:col-span-4 md:sticky md:top-32">
                         <motion.div
-                            initial={{ opacity: 0, x: -30 }}
+                            initial={{ opacity: 0, x: isRtl ? 30 : -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                             className="relative"
                         >
-                            <span className="text-6xl md:text-9xl font-serif text-white/5 absolute -top-8 -left-2 md:-top-12 md:-left-8 -z-10 select-none">
+                            <span className={cn(
+                                "text-6xl md:text-9xl font-serif text-white/5 absolute -top-8 -z-10 select-none",
+                                isRtl ? "-right-2 md:-right-8" : "-left-2 md:-left-8"
+                            )}>
                                 SEDER
                             </span>
                             <h3 className="text-3xl font-bold text-white mb-4 uppercase tracking-widest">
@@ -100,7 +106,7 @@ export default function AboutPage() {
                             >
                                 <p className={cn(
                                     "text-lg md:text-xl leading-8 text-slate-300 font-light",
-                                    i === 0 && "first-letter:text-5xl first-letter:font-serif first-letter:text-amber-400 first-letter:float-left first-letter:mr-3 first-letter:mt-1"
+                                    i === 0 && "first-letter:text-5xl first-letter:font-serif first-letter:text-amber-400 first-letter:float-start first-letter:me-3 first-letter:mt-1"
                                 )}>
                                     {t(key)}
                                 </p>

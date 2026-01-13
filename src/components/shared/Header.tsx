@@ -97,7 +97,7 @@ export function Header({ locale }: { locale: string }) {
                 </nav>
 
                 {/* Actions */}
-                <div className="hidden md:flex items-center gap-4">
+                <div className="flex items-center gap-2 md:gap-4">
                     <LanguageSelector forceDark={!!(isEvents || (scrolled && (isBusiness || isUHNWI)))} />
                 </div>
 
@@ -129,13 +129,6 @@ export function Header({ locale }: { locale: string }) {
                                     {t(link.label)}
                                 </Link>
                             ))}
-
-                            <button
-                                onClick={toggleLanguage}
-                                className="mt-8 text-lg text-white/60 uppercase border border-white/20 px-6 py-2 rounded-full"
-                            >
-                                Change Language ({locale})
-                            </button>
                         </motion.div>
                     )}
                 </AnimatePresence>
