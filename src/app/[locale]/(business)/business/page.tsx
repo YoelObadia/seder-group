@@ -1,18 +1,35 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
 import { verticals } from '@/data/verticals';
 import { ExternalLinkCard } from '@/components/shared/ExternalLinkCard';
 import { motion } from 'framer-motion';
-
 import { BackButton } from '@/components/shared/BackButton';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Seder Business | Conciergerie Corporate & Lifestyle Manager Israël',
+    description: 'Services B2B exclusifs et gestion de patrimoine. Conciergerie d\'entreprise, consulting immobilier et relocation VIP à Tel Aviv et Jérusalem.',
+};
 
 export default function BusinessPage() {
     const t = useTranslations('BusinessPage');
     const { business } = verticals;
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'ProfessionalService',
+        name: 'Seder Business',
+        url: 'https://seder-group.com/business',
+        description: 'Premium Corporate Concierge and Real Estate Consulting in Israel.',
+        areaServed: 'Israel',
+        serviceType: ['Corporate Concierge', 'Real Estate Consulting', 'Relocation']
+    };
+
     return (
         <div className="min-h-screen text-white py-24 px-4 md:px-8 flex flex-col items-center">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <BackButton theme="dark" />
             {/* Header / Intro */}
             <header className="max-w-4xl mx-auto text-center mb-24">

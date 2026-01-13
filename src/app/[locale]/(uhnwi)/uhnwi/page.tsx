@@ -1,11 +1,14 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
 import { verticals } from '@/data/verticals';
 import { ExternalLinkCard } from '@/components/shared/ExternalLinkCard';
 import { motion } from 'framer-motion';
-
 import { BackButton } from '@/components/shared/BackButton';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Seder UHNWI | Family Office & Lifestyle Management Israel',
+    description: 'Services ultra-privés pour UHNWI. Gestion de fortune, sécurité rapprochée et accès exclusif aux propriétés de luxe en Israël.',
+};
 
 export default function UHNWIPage() {
     const t = useTranslations('UHNWIPage');
@@ -13,8 +16,26 @@ export default function UHNWIPage() {
 
     const mainBrand = uhnwi.brands[0];
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: 'Seder UHNWI Services',
+        url: 'https://seder-group.com/uhnwi',
+        description: 'Exclusive Lifestyle Management and Family Office Services for UHNWI in Israel.',
+        provider: {
+            '@type': 'Organization',
+            name: 'Seder Group'
+        },
+        serviceType: 'Luxury Lifestyle Management',
+        areaServed: 'Global'
+    };
+
     return (
         <div className="min-h-screen bg-black text-white py-24 px-4 md:px-8 flex flex-col items-center">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <BackButton theme="dark" className="text-amber-400 border-amber-400/20 bg-black/40 hover:bg-amber-400/10" />
             {/* Header / Intro */}
             <header className="max-w-4xl mx-auto text-center mb-20">

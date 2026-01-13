@@ -59,7 +59,7 @@ export function LanguageSelector({ className, forceDark }: LanguageSelectorProps
                 )}
             >
                 <div className="w-4 h-3 relative overflow-hidden rounded-[1px] shadow-sm">
-                    <Flag code={currentLang?.flag} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <Flag code={currentLang?.flag} alt={currentLang?.label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <span>{locale.toUpperCase()}</span>
                 <ChevronDown
@@ -93,7 +93,7 @@ export function LanguageSelector({ className, forceDark }: LanguageSelectorProps
                             >
                                 <div className="flex items-center gap-3">
                                     <div className="w-5 h-3.5 relative overflow-hidden rounded-[2px] shadow-sm">
-                                        <Flag code={lang.flag} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                        <Flag code={lang.flag} alt={lang.label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                     </div>
                                     <span className={cn(lang.code === 'he' && "font-sans")}>{lang.label}</span>
                                 </div>

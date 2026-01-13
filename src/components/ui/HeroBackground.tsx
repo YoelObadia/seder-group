@@ -188,8 +188,8 @@ const GradientPlane = () => {
 
     return (
         <mesh ref={meshRef} position={[0, 0, 0]} scale={[2, 2, 1]}>
-            {/* Segments réduits à 128 pour éviter de surcharger le GPU */}
-            <planeGeometry args={[5, 5, 128, 128]} />
+            {/* Segments réduits à 64 pour optimiser les performances (LCP/TBT) */}
+            <planeGeometry args={[5, 5, 64, 64]} />
             <shaderMaterial
                 vertexShader={vertexShader}
                 fragmentShader={fragmentShader}

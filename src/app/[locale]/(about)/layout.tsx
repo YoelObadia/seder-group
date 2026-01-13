@@ -1,3 +1,10 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Seder About | Genèse & Vision',
+    description: 'Découvrez l\'histoire de Seder Group. Une vision née de la convergence entre art, excellence et valeurs humaines.',
+};
+
 export default function AboutLayout({
     children,
 }: {

@@ -1,11 +1,14 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
 import { verticals } from '@/data/verticals';
 import { ExternalLinkCard } from '@/components/shared/ExternalLinkCard';
 import { motion } from 'framer-motion';
-
 import { BackButton } from '@/components/shared/BackButton';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Seder Music | Production Musicale & Orchestres de Luxe Israël',
+    description: 'L\'excellence musicale pour vos événements. Orchestres symphoniques, groupes live et production sonore sur-mesure pour mariages et galas en Israël.',
+};
 
 export default function MusicPage() {
     const t = useTranslations('MusicPage');
@@ -13,8 +16,30 @@ export default function MusicPage() {
     // Assuming Seder Music Label is the main CTA
     const mainBrand = music.brands.find(b => b.name === 'Seder Music Label') || music.brands[0];
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'MusicGroup',
+        name: 'Seder Music',
+        url: 'https://seder-group.com/music',
+        logo: 'https://seder-group.com/images/music-logo.png',
+        description: 'Elite music production and live bands for luxury events in Israel.',
+        genre: ['Jewish Soul', 'Pop', 'Classical', 'Chassidic'],
+        location: {
+            '@type': 'Place',
+            name: 'Tel Aviv, Israel'
+        },
+        potentialAction: {
+            '@type': 'ListenAction',
+            target: 'https://seder-group.com/music/demos'
+        }
+    };
+
     return (
         <div className="min-h-screen bg-black text-white py-24 px-4 md:px-8 flex flex-col items-center relative overflow-hidden">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <BackButton theme="dark" />
             {/* Ambient Background */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.15)_0%,black_100%)] pointer-events-none" />

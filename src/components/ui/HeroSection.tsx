@@ -1,10 +1,15 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import { HeroBackground } from './HeroBackground';
 import { cn } from '@/lib/utils';
 import { TextReveal } from '@/components/motion/TextReveal';
+
+const HeroBackground = dynamic(() => import('./HeroBackground').then(mod => mod.HeroBackground), {
+    ssr: false,
+    loading: () => <div className="absolute inset-0 bg-[#0a0520]" />
+});
 
 interface HeroSectionProps {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -27,20 +32,20 @@ export function HeroSection({
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2,
-                delayChildren: 0.3,
+                staggerChildren: 0.1, // Faster stagger
+                delayChildren: 0.1,   // Reduced delay for LCP
             },
         },
     };
 
     const fadeUpVariants = {
-        hidden: { opacity: 0, y: 40 },
+        hidden: { opacity: 0, y: 20 }, // Reduced distance
         visible: {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.8,
-                ease: [0.22, 1, 0.36, 1] as const,
+                duration: 0.6, // Faster duration
+                ease: [0.25, 0.1, 0.25, 1] as const,
             },
         },
     };

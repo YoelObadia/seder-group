@@ -105,6 +105,8 @@ export function Header({ locale }: { locale: string }) {
                 <button
                     className="md:hidden z-50 relative p-2"
                     onClick={() => setIsOpen(!isOpen)}
+                    aria-label={isOpen ? "Close menu" : "Open menu"}
+                    aria-expanded={isOpen}
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>

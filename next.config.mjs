@@ -8,6 +8,9 @@ const nextConfig = {
     experimental: {
         // viewTransition: true // Often not needed explicitly in 15+ App Router for basic VT API usage, but good to have if specific flag required. Leaving standard for now.
     },
+    images: {
+        formats: ['image/avif', 'image/webp'],
+    },
 };
 
 export default withNextIntl(nextConfig);

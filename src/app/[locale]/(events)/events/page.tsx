@@ -1,19 +1,43 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
 import { verticals } from '@/data/verticals';
 import { ExternalLinkCard } from '@/components/shared/ExternalLinkCard';
 import { motion } from 'framer-motion';
-
 import { BackButton } from '@/components/shared/BackButton';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Seder Events | Wedding Planner Luxe & Bar Mitzvah Kotel',
+    description: 'Organisation d\'événements d\'exception en Israël. Mariages de prestige, Bar Mitzvah au Kotel et événements corporate sur-mesure par Seder Group.',
+};
 
 export default function EventsPage() {
     const t = useTranslations('EventsPage');
     const { events } = verticals;
     const kotelEvent = events.brands.find(b => b.name === 'Kotel Event') || events.brands[0];
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'ProfessionalService',
+        additionalType: 'https://schema.org/EventPlanner',
+        name: 'Seder Events',
+        url: 'https://seder-group.com/events',
+        image: 'https://seder-group.com/images/events-cover.jpg',
+        description: 'Luxury Wedding and Bar Mitzvah Planner in Israel.',
+        address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Jerusalem',
+            addressCountry: 'IL'
+        },
+        priceRange: '$$$$',
+        telephone: '+972 52-754-8759'
+    };
+
     return (
         <div className="min-h-screen bg-white text-slate-900 py-24 px-4 md:px-8 flex flex-col items-center">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <BackButton theme="light" />
 
             {/* Header / Intro */}

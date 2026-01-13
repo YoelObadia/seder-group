@@ -10,7 +10,7 @@ export function Footer() {
     const tNav = useTranslations('Navigation');
 
     return (
-        <footer className="bg-slate-950 text-slate-400 py-12 md:py-20 border-t border-slate-900 w-full">
+        <footer className="bg-slate-950 text-slate-300 py-12 md:py-20 border-t border-slate-900 w-full">
             <div className="w-full px-4 md:px-8 lg:px-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 mb-16 md:mb-24">
 
@@ -53,15 +53,15 @@ export function Footer() {
                             contact@seder-group.com
                         </a>
                         <div className="flex gap-6 mt-4">
-                            <a href="#" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Instagram size={24} /></a>
-                            <a href="#" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Linkedin size={24} /></a>
-                            <a href="#" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Twitter size={24} /></a>
+                            <a href="#" aria-label="Instagram" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Instagram size={24} /></a>
+                            <a href="#" aria-label="LinkedIn" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Linkedin size={24} /></a>
+                            <a href="#" aria-label="Twitter" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Twitter size={24} /></a>
                         </div>
                     </div>
                 </div>
 
                 {/* Legal */}
-                <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-4">
                     <p className="text-center md:text-start">&copy; {new Date().getFullYear()} Seder Group. {t('rights')}</p>
                     <div className="flex gap-6">
                         <a href="#" className="hover:text-white transition-colors">{t('privacy')}</a>
