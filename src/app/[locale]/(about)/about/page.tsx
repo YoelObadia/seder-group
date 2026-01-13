@@ -1,14 +1,14 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { TextReveal } from '@/components/motion/TextReveal';
 import { cn } from '@/lib/utils';
 
 export default function AboutPage() {
     const t = useTranslations('AboutPage');
 
-    const fadeInUp = {
+    const fadeInUp: Variants = {
         hidden: { opacity: 0, y: 30 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
     };
@@ -75,17 +75,15 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
+                            className="relative"
                         >
-                            <span className="text-9xl font-serif text-white/5 absolute -top-12 -left-8 -z-10 select-none">
+                            <span className="text-6xl md:text-9xl font-serif text-white/5 absolute -top-8 -left-2 md:-top-12 md:-left-8 -z-10 select-none">
                                 SEDER
                             </span>
                             <h3 className="text-3xl font-bold text-white mb-4 uppercase tracking-widest">
-                                {t('title').split(' ')[0]} {/* "The" or first word */}
+                                {t('sidebar_title')}
                             </h3>
                             <div className="w-12 h-1 bg-amber-500 mb-6" />
-                            <p className="text-slate-400 text-sm leading-loose">
-                                {t('p3').substring(0, 120)}...
-                            </p>
                         </motion.div>
                     </div>
 
