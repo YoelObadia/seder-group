@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-montserrat: var(--font-montserrat);
+  --font-heebo: var(--font-heebo);
+
+  /* Colors - Verticals */
+  --color-business: #0f172a;
+  --color-events: #d4c5a3;
+  --color-uhnwi: #dbb369;
+  --color-music: #09090b;
+}
+
+/* Base Styles */
+:root {
+  /* Default background */
+  background-color: var(--color-music);
+  color: white;
+}
+
+/* RTL Support Utilities if needed (Tailwind v4 handles logical properties well, e.g. ms-auto, ps-4, etc.) */
+/* We can add specific rtl-only overrides with [dir="rtl"] selector if strictly required, but usually standard utilities suffice. */

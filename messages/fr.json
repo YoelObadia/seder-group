@@ -1,0 +1,128 @@
+{
+    "home": {
+        "hero": {
+            "title": "SEDER GROUP",
+            "subtitle": "MUSIQUE • ÉVÉNEMENTS • UHNWI • BUSINESS",
+            "badge": "HOLDING",
+            "motto": "Orchestrer l'excellence."
+        },
+        "vision": {
+            "label": "QUI SOMMES-NOUS",
+            "title": "L'Intersection<br /> de l'Art & du Savoir.",
+            "pitch": "Seder Group est une holding mondiale redéfinissant les standards de l'excellence. Nous opérons comme le système nerveux central de trois verticales distinctes : <span class=\"text-white\">Conseil Stratégique</span>, <span class=\"text-white\">Événementiel Haut de Gamme</span>, et <span class=\"text-white\">Production Musicale</span>.",
+            "mission": "Découvrir l'histoire de Seder.",
+            "cities": "ISRAËL • FRANCE • USA • INTERNATIONAL"
+        },
+        "founder": {
+            "label": "LE FONDATEUR",
+            "title": "L'AUTORITÉ",
+            "name": "RAPHAËL D. SKOURI",
+            "role": "CEO & FOUNDER",
+            "stats": {
+                "years": "ANNÉES D'EXPÉRIENCE",
+                "projects": "PROJETS DIRIGÉS"
+            },
+            "manifesto": "Seder Group est plus qu'une structure, c'est l'union de trois départements complémentaires capables de produire votre vision. Notre mission est de mettre à disposition nos compétences et notre réseau afin de mener à bien vos projets et quêtes vers la réussite et l'excellence."
+        },
+        "gateway": {
+            "title": "CHOISIR UN DÉPARTEMENT",
+            "enter": "ENTRER",
+            "explore": "EXPLORER",
+            "items": {
+                "events": {
+                    "title": "SEDER EVENTS",
+                    "description": "Créer des moments inoubliables par la précision et l'élégance."
+                },
+                "uhnwi": {
+                    "title": "SEDER UHNWI",
+                    "description": "L'exclusivité redéfinie pour quelques privilégiés."
+                },
+                "business": {
+                    "title": "SEDER BUSINESS",
+                    "description": "L'excellence stratégique pour le paysage moderne du divertissement."
+                },
+                "music": {
+                    "title": "SEDER MUSIC",
+                    "description": "Une agence mondiale amplifiant les voix de demain."
+                }
+            }
+        }
+    },
+    "HomePage": {
+        "title": "Seder Group - Écosystème",
+        "business": "Business",
+        "music": "Musique",
+        "events": "Événements"
+    },
+    "Navigation": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "business": "Business",
+        "events": "Événements",
+        "music": "Musique",
+        "uhnwi": "UHNWI"
+    },
+    "Footer": {
+        "slogan": "Un écosystème unifié pour l'excellence et l'art.",
+        "explore": "Explorer",
+        "contact": "Contact",
+        "rights": "Tous droits réservés.",
+        "privacy": "Confidentialité",
+        "terms": "Conditions"
+    },
+    "AboutPage": {
+        "title": "La naissance de Seder",
+        "subtitle": "Seder est né d’un mot — et d’un chemin.",
+        "p1": "“Seder”, ce sont mes initiales : Raphaël David Skouri. Mais c’est aussi un sens profond : סדר, “l’ordre” en hébreu. L’idée que même ce qui semble complexe — une relation, une décision, un événement, un projet — peut devenir clair, structuré, maîtrisé. Et surtout : apaisé.",
+        "p2": "Mon parcours s’est construit sur une double exigence, au plus haut niveau : l’exigence artistique et l’exigence business.",
+        "p3": "Je suis artiste, chanteur andalou d’origine marocaine, Hazan et performer d’événements à connotation religieuse. Et un grand artiste n’est jamais “simplement” un artiste : il vit déjà dans la rigueur, la précision, le détail, la maîtrise de l’émotion et de l’exécution. C’est cette discipline artistique qui m’a préparé à comprendre l’excellence — puis à la transposer dans le monde du business.",
+        "p4": "Parce que j’étais très présent dans la communauté, et parce que mon relationnel s’est naturellement construit dans des cercles d’influence, on m’a confié progressivement des responsabilités qui dépassaient largement la scène. J’ai été sollicité pour organiser des événements (mariages, bar/bat mitsvas, célébrations), pour gérer des situations où tout devait être parfait, discret, fluide. On m’a également confié des responsabilités liées à l’immobilier : appartements à gérer, prestataires à coordonner, décisions à prendre. Et au fil du temps, j’ai aussi pris en charge tout ce qui touche à l’hospitalité, à la conciergerie, et au lifestyle : accueillir, prévoir, sécuriser, anticiper, faire en sorte que la vie soit simple pour des personnes très exigeantes.",
+        "p5": "Ces expériences m’ont donné une compétence centrale : une capacité d’organisation réelle, forgée sur le terrain, au contact de standards très élevés — dans l’événementiel, dans l’hospitalité, dans la conciergerie, et dans l’immobilier.",
+        "p6": "J’ai vécu plusieurs années aux États-Unis, ce qui a élargi mon réseau et renforcé mon apprentissage. Au départ, ces portes se sont ouvertes par bonté : on voyait en moi un artiste. Puis la relation est devenue beaucoup plus profonde : on m’a donné une confiance totale, des missions, des décisions à prendre, parfois même la gestion d’équipes entières pendant leurs voyages. J’ai appris le business auprès de personnes qui ont réussi — en intégrant leur méthode, leur mentalité, leurs standards.",
+        "p7": "En parallèle, ma place au cœur de la communauté m’a aussi mis au centre de dilemmes humains, parfois très tendus. J’ai souvent joué un rôle de médiateur : calmer, comprendre, rétablir la confiance, trouver une issue juste, et créer un accord. Cette capacité m’a amené à étudier et comprendre la psychologie des relations, des décisions, et des rapports de force — un pilier fondamental de ce que je suis devenu.",
+        "p8": "C’est exactement cela qui a donné naissance à Seder : la synthèse rare entre excellence artistique, exigence business, organisation événementielle, hospitalité/conciergerie lifestyle, immobilier, et médiation.",
+        "p9": "Aujourd’hui, en Israël, je suis sollicité pour ces mêmes raisons : fiabilité, discrétion, capacité à faire avancer, et aptitude à livrer un résultat dans des contextes où beaucoup échouent. Seder Group n’est pas une idée : c’est l’aboutissement d’une expérience réelle, structurée en une maison capable de servir — et de réaliser — au plus haut niveau.",
+        "closing": "Avec Seder, mettez de l'ordre dans votre vie."
+    },
+    "EventsPage": {
+        "title": "Seder Events",
+        "intro": "Seder Events est la maison événementielle de Seder Group : un département dédié à la création, la direction artistique et l’exécution d’événements qui doivent marquer une vie.",
+        "approach": "Notre approche ne se limite pas à “organiser”. Nous orchestrons : conception du concept, narration, design, scénographie, sélection des meilleurs partenaires, planning, coordination terrain, gestion des imprévus, et une exécution au millimètre — pour que le client vive son moment, pas sa logistique.",
+        "expertise_title": "Une expertise rare : Jérusalem",
+        "point1_title": "Exigence de production",
+        "point1_desc": "Standards techniques, fluidité, précision.",
+        "point2_title": "Respect des codes et traditions",
+        "point2_desc": "Avec une sensibilité authentique.",
+        "point3_title": "Élégance",
+        "point3_desc": "Détails, esthétique, harmonie globale.",
+        "conclusion": "Chaque projet est traité comme une pièce sur-mesure : de la première intention à la dernière minute de la soirée, avec une équipe qui pilote, sécurise et sublime.",
+        "cta": "Visiter Kotel Event"
+    },
+    "UHNWIPage": {
+        "title": "Seder UHNWI",
+        "intro": "Seder UHNWI est le département le plus exclusif de Seder Group, pensé pour une clientèle Ultra High Net Worth qui exige un niveau de service comparable aux meilleures maisons internationales.",
+        "service_desc": "Ici, tout est ultra-personnalisé, confidentiel et sans friction. Nous opérons comme un chef d’orchestre privé : lifestyle management, voyages sur-mesure, accès, hospitalité, expériences rares, et événements de prestige — avec une maîtrise totale de l’exécution, du détail et du protocole.",
+        "promise_title": "Notre Promesse",
+        "promise_desc": "Une présence discrète mais totale. Anticipation, précision, réseau, standards élevés — et surtout une capacité à délivrer ce qui n’est pas accessible au commun : le bon lieu, la bonne personne, le bon timing, la bonne exécution.",
+        "conclusion": "Seder UHNWI est un univers à part dans l’écosystème Seder et ne dépend d’aucune autre plateforme."
+    },
+    "MusicPage": {
+        "title": "Seder Music",
+        "intro": "Seder Music est une maison de production, de booking et d’influence conçue pour jouer dans la cour des références mondiales. Depuis Israël, au carrefour du Moyen-Orient et des scènes internationales, nous connectons talents, marques et institutions avec un niveau d’exigence rare : direction artistique, négociation, contractualisation, production exécutive, logistique globale et mise en scène — jusqu’à l’exécution finale.",
+        "value_prop": "Notre puissance repose sur une valeur triplée :",
+        "point1": "<b>Booking de stars & productions premium :</b> accès et orchestration de performances de très haut niveau, en garantissant une exécution irréprochable, des standards techniques élevés et une discrétion absolue.",
+        "point2": "<b>Influence & activation :</b> nous transformons l’audience des talents en contenu performant, générateur de résultats mesurables.",
+        "point3": "<b>Label R&D Records — les stars de demain :</b> au-delà des têtes d’affiche, nous détectons et développons les talents montants, les accompagnons artistiquement et structurons leur montée en puissance pour créer les icônes de la prochaine génération."
+    },
+    "BusinessPage": {
+        "title": "Seder Business",
+        "intro": "Seder Business est le pôle médiation stratégique et deal-making de Seder Group. Notre valeur ne réside pas dans le “conseil”, mais dans une capacité rare : débloquer ce qui est bloqué, sécuriser ce qui est sensible, et mener une situation complexe jusqu’à une issue concrète.",
+        "mediation_title": "Médiation Stratégique",
+        "mediation_desc": "Nous intervenons là où les échanges sont tendus, où les intérêts divergent, où la confiance est fragile. Notre signature, c’est une ingénierie de résolution : transformer un problème en solution, avec méthode, discrétion et standards élevés.",
+        "network_title": "Réseau Relationnel",
+        "network_desc": "Lorsque qu’une entreprise fait face à un manque critique, nous savons identifier et approcher les bonnes personnes. Nous opérons comme un opérateur de confiance : analyse, stratégie, ciblage et finalisation.",
+        "realty_title": "Immobilier & Conciergerie",
+        "realty_desc": "Spécialisation dans l’immobilier à Jérusalem et conciergerie intégrée. Nous gérons la chaîne complète : rentabilité, opérations, administratif et coordination, avec la même rigueur.",
+        "cta": "Contactez Seder Business"
+    }
+}
