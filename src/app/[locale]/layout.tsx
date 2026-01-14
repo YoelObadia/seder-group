@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { montserrat, heebo } from '@/app/fonts';
@@ -18,15 +18,15 @@ export async function generateMetadata({
 }: {
     params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Metadata' });
 
     return {
         title: {
             template: '%s | Seder Group',
-            default: 'Seder Group | Holding Événementielle & Lifestyle de Luxe Israël',
+            default: t('defaultTitle'),
         },
-        description: "La signature de l'excellence à Jérusalem et Tel Aviv. Seder Group orchestre vos investissements, événements et projets artistiques avec une exigence absolue.",
+        description: t('defaultDescription'),
         manifest: '/manifest.json',
         icons: {
             icon: '/favicon.ico',

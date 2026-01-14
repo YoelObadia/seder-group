@@ -1,4 +1,8 @@
 {
+    "Metadata": {
+        "defaultTitle": "Seder Group | Global Event Holding & Luxury Lifestyle Israel",
+        "defaultDescription": "The signature of excellence in Jerusalem and Tel Aviv. Seder Group orchestrates your investments, events, and artistic projects with absolute requirement."
+    },
     "home": {
         "hero": {
             "title": "SEDER GROUP",
@@ -86,6 +90,10 @@
         "closing": "With Seder, bring order to your life."
     },
     "EventsPage": {
+        "metadata": {
+            "title": "Seder Events | Luxury Wedding Planner & Bar Mitzvah Kotel",
+            "description": "Organizing exceptional events in Israel. Prestige weddings, Bar Mitzvah at the Kotel, and bespoke corporate events by Seder Group."
+        },
         "title": "Seder Events",
         "intro": "Seder Events is the event house of Seder Group: a department dedicated to the creation, artistic direction, and execution of events designed to mark a lifetime.",
         "approach": "Our approach is not limited to 'organizing'. We orchestrate: concept design, storytelling, scenography, partner selection, planning, field coordination, contingency management, and millimeter-precise execution — so the client experiences their moment, not their logistics.",
@@ -100,6 +108,10 @@
         "cta": "Visit Kotel Event"
     },
     "UHNWIPage": {
+        "metadata": {
+            "title": "Seder UHNWI | Family Office & Lifestyle Management Israel",
+            "description": "Ultra-private services for UHNWI. Wealth management, close protection, and exclusive access to luxury properties in Israel."
+        },
         "title": "Seder UHNWI",
         "intro": "Seder UHNWI is the most exclusive department of Seder Group, designed for an Ultra High Net Worth clientele that demands a level of service comparable to the best international houses.",
         "service_desc": "Here, everything is ultra-personalized, confidential, and frictionless. We operate as a private conductor: lifestyle management, bespoke travel, access, hospitality, rare experiences, and prestigious events — with total mastery of execution, detail, and protocol.",
@@ -108,6 +120,10 @@
         "conclusion": "Seder UHNWI is a universe apart within the Seder ecosystem and depends on no other platform."
     },
     "MusicPage": {
+        "metadata": {
+            "title": "Seder Music | Music Production & Luxury Orchestras Israel",
+            "description": "Musical excellence for your events. Symphony orchestras, live bands, and bespoke sound production for weddings and galas in Israel."
+        },
         "title": "Seder Music",
         "intro": "Seder Music is a production, booking, and influence house designed to play in the league of global benchmarks. From Israel, at the crossroads of the Middle East and international scenes, we connect talents, brands, and institutions with a rare level of requirement: artistic direction, negotiation, contracting, executive production, global logistics, and staging — right up to final execution.",
         "value_prop": "Our power rests on a triple value:",
@@ -116,6 +132,10 @@
         "point3": "<b>R&D Records Label — The Stars of Tomorrow:</b> beyond the headliners, we detect and develop rising talents, accompany them artistically, and structure their rise to power to create the icons of the next generation."
     },
     "BusinessPage": {
+        "metadata": {
+            "title": "Seder Business | Corporate Concierge & Lifestyle Manager Israel",
+            "description": "Exclusive B2B services and wealth management. Corporate concierge, real estate consulting, and VIP relocation in Tel Aviv and Jerusalem."
+        },
         "title": "Seder Business",
         "intro": "Seder Business is the strategic mediation and deal-making arm of Seder Group. Our value lies not in 'consulting', but in a rare capability: unlocking what is blocked, securing what is sensitive, and leading complex situations to a concrete outcome.",
         "mediation_title": "Strategic Mediation",

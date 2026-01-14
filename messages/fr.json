@@ -1,4 +1,8 @@
 {
+    "Metadata": {
+        "defaultTitle": "Seder Group | Holding Événementielle & Lifestyle de Luxe Israël",
+        "defaultDescription": "La signature de l'excellence à Jérusalem et Tel Aviv. Seder Group orchestre vos investissements, événements et projets artistiques avec une exigence absolue."
+    },
     "home": {
         "hero": {
             "title": "SEDER GROUP",
@@ -86,6 +90,10 @@
         "closing": "Avec Seder, mettez de l'ordre dans votre vie."
     },
     "EventsPage": {
+        "metadata": {
+            "title": "Seder Events | Wedding Planner Luxe & Bar Mitzvah Kotel",
+            "description": "Organisation d'événements d'exception en Israël. Mariages de prestige, Bar Mitzvah au Kotel et événements corporate sur-mesure par Seder Group."
+        },
         "title": "Seder Events",
         "intro": "Seder Events est la maison événementielle de Seder Group : un département dédié à la création, la direction artistique et l’exécution d’événements qui doivent marquer une vie.",
         "approach": "Notre approche ne se limite pas à “organiser”. Nous orchestrons : conception du projet, narration, design, scénographie, sélection des meilleurs partenaires, planning, coordination terrain, gestion des imprévus, et une exécution au millimètre — pour que le client vive son moment, pas sa logistique.",
@@ -100,6 +108,10 @@
         "cta": "Visiter Kotel Event"
     },
     "UHNWIPage": {
+        "metadata": {
+            "title": "Seder UHNWI | Family Office & Lifestyle Management Israel",
+            "description": "Services ultra-privés pour UHNWI. Gestion de fortune, sécurité rapprochée et accès exclusif aux propriétés de luxe en Israël."
+        },
         "title": "Seder UHNWI",
         "intro": "Seder UHNWI est le département le plus exclusif de Seder Group, pensé pour une clientèle Ultra High Net Worth qui exige un niveau de service comparable aux meilleures maisons internationales.",
         "service_desc": "Ici, tout est ultra-personnalisé, confidentiel et sans friction. Nous opérons comme un chef d’orchestre privé : lifestyle management, voyages sur-mesure, accès, hospitalité, expériences rares, et événements de prestige — avec une maîtrise totale de l’exécution, du détail et du protocole.",
@@ -108,6 +120,10 @@
         "conclusion": "Seder UHNWI est un univers à part dans l’écosystème Seder et ne dépend d’aucune autre plateforme."
     },
     "MusicPage": {
+        "metadata": {
+            "title": "Seder Music | Production Musicale & Orchestres de Luxe Israël",
+            "description": "L'excellence musicale pour vos événements. Orchestres symphoniques, groupes live et production sonore sur-mesure pour mariages et galas en Israël."
+        },
         "title": "Seder Music",
         "intro": "Seder Music est une maison de production, de booking et d’influence conçue pour jouer dans la cour des références mondiales. Depuis Israël, au carrefour du Moyen-Orient et des scènes internationales, nous connectons talents, marques et institutions avec un niveau d’exigence rare : direction artistique, négociation, contractualisation, production exécutive, logistique globale et mise en scène — jusqu’à l’exécution finale.",
         "value_prop": "Notre puissance repose sur une valeur triplée :",
@@ -116,6 +132,10 @@
         "point3": "<b>Label R&D Records — les stars de demain :</b> au-delà des têtes d’affiche, nous détectons et développons les talents montants, les accompagnons artistiquement et structurons leur montée en puissance pour créer les icônes de la prochaine génération."
     },
     "BusinessPage": {
+        "metadata": {
+            "title": "Seder Business | Conciergerie Corporate & Lifestyle Manager Israël",
+            "description": "Services B2B exclusifs et gestion de patrimoine. Conciergerie d'entreprise, consulting immobilier et relocation VIP à Tel Aviv et Jérusalem."
+        },
         "title": "Seder Business",
         "intro": "Seder Business est le pôle médiation stratégique et deal-making de Seder Group. Notre valeur ne réside pas dans le “conseil”, mais dans une capacité rare : débloquer ce qui est bloqué, sécuriser ce qui est sensible, et mener une situation complexe jusqu’à une issue concrète.",
         "mediation_title": "Médiation Stratégique",
