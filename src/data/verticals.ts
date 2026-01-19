@@ -41,7 +41,7 @@ export const verticals: Record<string, VerticalShowcase> = {
             {
                 name: 'Conciergerie',
                 description: 'Luxury lifestyle management and corporate solutions.',
-                url: 'https://seder-concierge.com',
+                url: 'https://concierge-seder.com',
                 image: '/images/concierge-card.webp'
             }
         ]
