@@ -3,7 +3,6 @@
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { TextReveal } from '@/components/motion/TextReveal';
 
 const HeroBackground = dynamic(() => import('./HeroBackground').then(mod => mod.HeroBackground), {
@@ -20,35 +19,9 @@ interface HeroSectionProps {
 
 export function HeroSection({
     dict,
-    theme = 'dark',
+    theme = 'dark', // eslint-disable-line @typescript-eslint/no-unused-vars
     codedEnvironment = false,
 }: HeroSectionProps) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const isDark = theme === 'dark';
-
-    // Animation Variants
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1, // Faster stagger
-                delayChildren: 0.1,   // Reduced delay for LCP
-            },
-        },
-    };
-
-    const fadeUpVariants = {
-        hidden: { opacity: 0, y: 20 }, // Reduced distance
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6, // Faster duration
-                ease: [0.25, 0.1, 0.25, 1] as const,
-            },
-        },
-    };
 
     // Fallback if dict is missing
     const heroContent = dict?.home?.hero || {
@@ -67,15 +40,12 @@ export function HeroSection({
                 </div>
             )}
 
-            {/* Main Content Container */}
-            <motion.div
-                className="container mx-auto px-4 flex flex-col items-center text-center z-10"
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-            >
-                {/* 1. Holding Badge */}
-                <motion.div variants={fadeUpVariants} className="mb-8">
+            {/* Main Content Container - Using Standard HTML for LCP/FCP Optimization */}
+            {/* Removed motion.div container to prevent initial opacity: 0 blocking paint */}
+            <div className="container mx-auto px-4 flex flex-col items-center text-center z-10">
+
+                {/* 1. Holding Badge - CSS Animation */}
+                <div className="mb-8 animate-fade-in-up">
                     <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-md">
                         <span
                             className="text-xs font-medium tracking-widest text-white uppercase"
@@ -84,21 +54,20 @@ export function HeroSection({
                             {heroContent.badge}
                         </span>
                     </div>
-                </motion.div>
+                </div>
 
-                {/* 2. Masterpiece Title */}
-                <motion.h1
-                    variants={fadeUpVariants}
-                    className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-white tracking-tighter mb-6 drop-shadow-xl"
+                {/* 2. Masterpiece Title - LCP ELEMENT - CSS Animation */}
+                <h1
+                    className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-white tracking-tighter mb-6 drop-shadow-xl animate-fade-in-up delay-100 opacity-0 fill-mode-forwards"
                     style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                 >
                     {heroContent.title}
-                </motion.h1>
+                </h1>
 
-                {/* 3. Elegant Separator */}
-                <motion.div variants={fadeUpVariants} className="w-24 h-[1px] bg-white/30 mb-8" />
+                {/* 3. Elegant Separator - CSS Animation */}
+                <div className="w-24 h-[1px] bg-white/30 mb-8 animate-fade-in-up delay-200 opacity-0 fill-mode-forwards" />
 
-                {/* 4. Subtitle */}
+                {/* 4. Subtitle - Client Side Text Reveal (Acceptable to be delayed slightly) */}
                 <div className="mb-4">
                     <TextReveal
                         className="text-sm md:text-lg lg:text-xl font-medium text-slate-300 uppercase tracking-[0.3em]"
@@ -108,16 +77,15 @@ export function HeroSection({
                     </TextReveal>
                 </div>
 
-                {/* 5. Motto */}
-                <motion.p
-                    variants={fadeUpVariants}
-                    className="text-lg md:text-2xl text-slate-200 font-serif italic opacity-90"
+                {/* 5. Motto - CSS Animation */}
+                <p
+                    className="text-lg md:text-2xl text-slate-200 font-serif italic opacity-90 animate-fade-in-up delay-300 fill-mode-forwards"
                 >
                     &quot;{heroContent.motto}&quot;
-                </motion.p>
-            </motion.div>
+                </p>
+            </div>
 
-            {/* 6. Scroll Indicator */}
+            {/* 6. Scroll Indicator - Kept Motion as it's interactive/decorative */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
