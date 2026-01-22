@@ -163,7 +163,7 @@ void main() {
 
 // --- 2. LE COMPOSANT 3D ---
 
-const GradientPlane = () => {
+const GradientPlane = ({ geometryArgs }: { geometryArgs: [number, number, number, number] }) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const meshRef = useRef<THREE.Mesh>(null);
 
@@ -188,8 +188,8 @@ const GradientPlane = () => {
 
     return (
         <mesh ref={meshRef} position={[0, 0, 0]} scale={[2, 2, 1]}>
-            {/* Segments réduits à 64 pour optimiser les performances (LCP/TBT) */}
-            <planeGeometry args={[5, 5, 64, 64]} />
+            {/* Segments dynamiques pour optimiser les performances (LCP/TBT) */}
+            <planeGeometry args={geometryArgs} />
             <shaderMaterial
                 vertexShader={vertexShader}
                 fragmentShader={fragmentShader}
@@ -204,7 +204,28 @@ const GradientPlane = () => {
 
 export function HeroBackground() {
     const [mounted, setMounted] = useState(false);
-    useEffect(() => setMounted(true), []);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    // Configuration des performances basée sur le device
+    // Mobile: 24x24 segments (576 vertices) - Très léger
+    // Desktop: 48x48 segments (2304 vertices) - Suffisant pour le look "high end" sans être 64x64
+    const geometryArgs: [number, number, number, number] = isMobile
+        ? [5, 5, 24, 24]
+        : [5, 5, 48, 48];
+
+    // Sur mobile, on force le DPR à 1 pour éviter la surchauffe
+    const dpr: [number, number] = isMobile ? [1, 1] : [1, 1.5];
 
     return (
         <div
@@ -222,14 +243,16 @@ export function HeroBackground() {
                 <Canvas
                     camera={{ position: [0, 0, 1.5] }}
                     // OPTIMISATIONS ANTI-CRASH
-                    dpr={[1, 1.5]} // On bride la résolution pour sauver la carte graphique
+                    dpr={dpr}
                     gl={{
                         antialias: false,
                         powerPreference: "high-performance",
-                        alpha: false
+                        alpha: false,
+                        // depth: false, // On pourrait désactiver le depth buffer si on ne l'utilise pas, mais attention aux artefacts
+                        stencil: false // Pas besoin de stencil buffer
                     }}
                 >
-                    <GradientPlane />
+                    <GradientPlane geometryArgs={geometryArgs} />
                 </Canvas>
             )}
         </div>

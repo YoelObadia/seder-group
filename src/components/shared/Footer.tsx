@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
-import { Mail, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Instagram, Linkedin } from 'lucide-react';
 
 export function Footer() {
     const t = useTranslations('Footer');
@@ -53,9 +53,14 @@ export function Footer() {
                             contact@seder-group.com
                         </a>
                         <div className="flex gap-6 mt-4">
-                            <a href="#" aria-label="Instagram" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Instagram size={24} /></a>
-                            <a href="#" aria-label="LinkedIn" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Linkedin size={24} /></a>
-                            <a href="#" aria-label="Twitter" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Twitter size={24} /></a>
+                            <a href="https://www.instagram.com/seder.group/" aria-label="Instagram" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Instagram size={24} /></a>
+                            <a href="https://www.linkedin.com/company/sedergroup/?viewAsMember=true" aria-label="LinkedIn" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Linkedin size={24} /></a>
+                            <a href="https://x.com/SEDER_GR0UP" aria-label="X" className="hover:text-white transition-colors hover:scale-110 transform duration-200">
+                                {/* X Logo */}
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231h0.001Zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644Z" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
