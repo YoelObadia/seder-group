@@ -3,6 +3,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring, useInView, animate } from 'framer-motion';
 import Image from 'next/image';
+import { useLocale } from 'next-intl';
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // CONFIGURATION
@@ -149,6 +150,10 @@ export function FounderSection({ dict }: FounderSectionProps) {
     const founderData = dict.home.founder;
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
+    const locale = useLocale();
+    const isRtl = locale === 'he';
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const containerRef = useRef<HTMLDivElement>(null);
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const imageRef = useRef<HTMLDivElement>(null);
@@ -270,7 +275,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
 
                         {/* Section Title */}
                         <motion.div
-                            initial={{ opacity: 0, x: 50 }}
+                            initial={{ opacity: 0, x: isRtl ? -50 : 50 }}
                             animate={isContentInView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
                             className="space-y-4"

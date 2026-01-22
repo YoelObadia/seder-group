@@ -27,7 +27,7 @@ export default function UhnwiClient() {
     };
 
     return (
-        <div className="min-h-screen bg-black text-white py-24 px-4 md:px-8 flex flex-col items-center">
+        <div className="min-h-screen bg-black text-white pt-40 pb-24 md:py-24 px-4 md:px-8 flex flex-col items-center">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -39,7 +39,7 @@ export default function UhnwiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-[#dbb369]"
+                    className="text-3xl md:text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-[#dbb369]"
                 >
                     {t('title')}
                 </motion.h1>
@@ -69,7 +69,7 @@ export default function UhnwiClient() {
                     className="pt-24"
                 >
                     <h2 className="text-3xl md:text-4xl font-serif text-[#dbb369] mb-8">{t('promise_title')}</h2>
-                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light px-4 md:px-12 border-l-2 border-[#dbb369]/30 md:border-l-0 md:border-r-0 inline-block">
+                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light px-4 md:px-12 border-s-2 border-[#dbb369]/30 md:border-s-0 inline-block">
                         {t('promise_desc')}
                     </p>
                 </motion.div>

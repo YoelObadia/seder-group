@@ -59,13 +59,13 @@ export default async function LocaleLayout({
         name: 'Seder Group',
         legalName: 'Seder Group Ltd.',
         url: 'https://seder-group.com',
-        logo: 'https://seder-group.com/logo-corporate.png',
+        logo: 'https://seder-group.com/logo.webp',
         description: "Holding de luxe spécialisée dans l'événementiel, la production musicale et la conciergerie privée pour UHNWI.",
         foundingDate: '2020',
         founders: [
             {
                 '@type': 'Person',
-                name: 'Samuel Skouri'
+                name: 'Raphael Skouri'
             }
         ],
         foundingLocation: {
@@ -74,9 +74,9 @@ export default async function LocaleLayout({
         },
         areaServed: 'Global',
         sameAs: [
-            'https://www.linkedin.com/company/seder-group',
-            'https://www.instagram.com/seder_group',
-            'https://www.facebook.com/sedergroup'
+            'https://www.instagram.com/seder.group/',
+            'https://www.linkedin.com/company/sedergroup/',
+            'https://x.com/SEDER_GR0UP'
         ],
         contactPoint: {
             '@type': 'ContactPoint',

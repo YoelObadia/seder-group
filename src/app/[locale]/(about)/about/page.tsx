@@ -125,11 +125,11 @@ export default function AboutPage() {
                         transition={{ duration: 0.8 }}
                         className="relative bg-white/5 border border-white/10 p-12 md:p-20 rounded-sm text-center"
                     >
-                        <span className="text-6xl font-serif text-amber-400/20 absolute top-8 left-8">“</span>
+                        <span className="text-6xl font-serif text-amber-400/20 absolute top-8 start-8">“</span>
                         <p className="text-2xl md:text-4xl font-serif italic text-white leading-normal relative z-10">
                             {t('p8')}
                         </p>
-                        <span className="text-6xl font-serif text-amber-400/20 absolute bottom-8 right-8">”</span>
+                        <span className="text-6xl font-serif text-amber-400/20 absolute bottom-8 end-8">”</span>
                     </motion.div>
                 </section>
 

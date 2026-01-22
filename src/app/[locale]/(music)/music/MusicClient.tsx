@@ -31,7 +31,7 @@ export default function MusicClient() {
     };
 
     return (
-        <div className="min-h-screen bg-black text-white py-24 px-4 md:px-8 flex flex-col items-center relative overflow-hidden">
+        <div className="min-h-screen bg-black text-white pt-40 pb-24 md:py-24 px-4 md:px-8 flex flex-col items-center relative overflow-hidden">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -46,7 +46,7 @@ export default function MusicClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-white"
+                    className="text-3xl md:text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-white"
                 >
                     {t('title')}
                 </motion.h1>
@@ -63,7 +63,7 @@ export default function MusicClient() {
 
                     <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
                         <p className="font-bold text-white mb-6 uppercase tracking-widest text-sm">{t('value_prop')}</p>
-                        <ul className="space-y-6 text-base md:text-lg">
+                        <ul className="space-y-6 text-base md:text-lg text-start">
                             <li dangerouslySetInnerHTML={{ __html: t.raw('point1') }} />
                             <li dangerouslySetInnerHTML={{ __html: t.raw('point2') }} />
                             <li dangerouslySetInnerHTML={{ __html: t.raw('point3') }} />

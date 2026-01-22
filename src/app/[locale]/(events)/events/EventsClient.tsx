@@ -29,7 +29,7 @@ export default function EventsClient() {
     };
 
     return (
-        <div className="min-h-screen bg-white text-slate-900 py-24 px-4 md:px-8 flex flex-col items-center">
+        <div className="min-h-screen bg-white text-slate-900 pt-40 pb-24 md:py-24 px-4 md:px-8 flex flex-col items-center">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -42,7 +42,7 @@ export default function EventsClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight"
+                    className="text-3xl md:text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight"
                 >
                     {t('title')}
                 </motion.h1>
@@ -82,7 +82,7 @@ export default function EventsClient() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 + (index * 0.1), duration: 0.6 }}
-                            className="text-center p-6 border-l md:border-l-0 md:border-t border-slate-200 pt-6"
+                            className="text-center p-6 border-s md:border-s-0 md:border-t border-slate-200 pt-6"
                         >
                             <h3 className="text-xl font-bold mb-3 text-slate-900 uppercase tracking-wide">{t(item.title)}</h3>
                             <p className="text-slate-600 leading-relaxed">

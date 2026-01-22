@@ -15,7 +15,7 @@ export function BackButton({ href = '/', theme = 'dark', className }: BackButton
         <Link
             href={href}
             className={cn(
-                "fixed top-24 start-4 md:start-8 z-40 p-2 rounded-full transition-all duration-300 hover:scale-110", // Positioning
+                "fixed top-[72px] md:top-24 start-4 md:start-8 z-40 p-2 rounded-full transition-all duration-300 hover:scale-110", // Positioning
                 theme === 'light'
                     ? "text-slate-900 border border-slate-200 bg-white/50 backdrop-blur-sm hover:bg-white"
                     : "text-white border border-white/10 bg-black/20 backdrop-blur-sm hover:bg-white/10",
@@ -23,7 +23,7 @@ export function BackButton({ href = '/', theme = 'dark', className }: BackButton
             )}
             aria-label="Back"
         >
-            <ArrowLeft className="w-6 h-6 rtl:rotate-180" />
+            <ArrowLeft className="w-5 h-5 md:w-6 md:h-6 rtl:rotate-180" />
         </Link>
     );
 }

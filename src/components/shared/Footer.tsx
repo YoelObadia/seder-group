@@ -54,7 +54,7 @@ export function Footer() {
                         </a>
                         <div className="flex gap-6 mt-4">
                             <a href="https://www.instagram.com/seder.group/" aria-label="Instagram" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Instagram size={24} /></a>
-                            <a href="https://www.linkedin.com/company/sedergroup/?viewAsMember=true" aria-label="LinkedIn" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Linkedin size={24} /></a>
+                            <a href="https://www.linkedin.com/company/sedergroup/" aria-label="LinkedIn" className="hover:text-white transition-colors hover:scale-110 transform duration-200"><Linkedin size={24} /></a>
                             <a href="https://x.com/SEDER_GR0UP" aria-label="X" className="hover:text-white transition-colors hover:scale-110 transform duration-200">
                                 {/* X Logo */}
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -53,7 +53,7 @@ export function GatewaySection({ dict }: { dict: any }) {
     const t = dict?.home?.gateway || { enter: 'Entrer', explore: 'Explorer' };
 
     return (
-        <section className="h-screen min-h-[600px] w-full flex flex-col md:flex-row bg-black overflow-hidden relative" id="gateway">
+        <section className="min-h-screen md:h-screen w-full flex flex-col md:flex-row bg-black overflow-hidden relative" id="gateway">
             {gateways.map((item) => {
                 const isHovered = hoveredId === item.id;
                 const flexValue = isHovered ? 3 : 1;
@@ -63,9 +63,9 @@ export function GatewaySection({ dict }: { dict: any }) {
                         key={item.id}
                         layout
                         className={cn(
-                            "relative flex-1 flex flex-col justify-end p-8 md:p-12 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] border-e border-white/5 last:border-e-0 cursor-pointer overflow-hidden group",
+                            "relative flex flex-col justify-end p-8 md:p-12 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] border-b md:border-b-0 md:border-e border-white/5 last:border-0 cursor-pointer overflow-hidden group min-h-[35vh] md:min-h-0",
                         )}
-                        style={{ flex: flexValue }}
+                        style={{ flex: typeof window !== 'undefined' && window.innerWidth >= 768 ? flexValue : 'none' }}
                         onMouseEnter={() => setHoveredId(item.id)}
                         onMouseLeave={() => setHoveredId(null)}
                         onClick={() => router.push(item.href)}
@@ -102,31 +102,45 @@ export function GatewaySection({ dict }: { dict: any }) {
                                 </div>
                             </motion.div>
 
-                            <AnimatePresence>
-                                {isHovered && (
+                            <AnimatePresence mode='wait'>
+                                {isHovered ? (
                                     <motion.div
-                                        initial={{ opacity: 0, height: 0, y: 20 }}
+                                        key="expanded"
+                                        initial={{ opacity: 0, height: 0, y: 10 }}
                                         animate={{ opacity: 1, height: 'auto', y: 0 }}
-                                        exit={{ opacity: 0, height: 0, y: 20 }}
-                                        className="overflow-hidden"
+                                        exit={{ opacity: 0, height: 0, y: 10 }}
+                                        transition={{ duration: 0.3 }}
+                                        className="hidden md:block overflow-hidden"
                                     >
-                                        <p className="text-gray-300 mb-6 max-w-sm line-clamp-2">
+                                        <p className="text-gray-300 mb-6 max-w-sm line-clamp-2 text-sm leading-relaxed">
                                             {dict?.home?.gateway?.items?.[item.id]?.description || item.vertical.description}
                                         </p>
-                                        <Link
-                                            href={item.href}
-                                            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full font-bold uppercase tracking-widest text-xs hover:bg-neutral-200 transition-colors"
-                                        >
+                                        <div className="inline-flex items-center gap-2 px-6 py-2 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold uppercase tracking-widest text-[10px] group-hover:bg-white group-hover:text-black transition-all duration-300">
                                             {t.enter}
-                                            <ArrowRight size={16} />
-                                        </Link>
+                                            <ArrowRight size={14} className="rtl:rotate-180" />
+                                        </div>
+                                    </motion.div>
+                                ) : (
+                                    <motion.div
+                                        key="collapsed"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        exit={{ opacity: 0 }}
+                                        transition={{ duration: 0.3, delay: 0.1 }}
+                                        className="hidden md:flex items-center gap-2 text-white/50 uppercase tracking-[0.2em] text-[10px] font-medium mt-2"
+                                    >
+                                        <span>{t.explore}</span>
+                                        <ArrowRight size={14} className="animate-pulse rtl:rotate-180" />
                                     </motion.div>
                                 )}
                             </AnimatePresence>
 
-                            {/* Mobile fallback CTA always visible if needed, or simple indicator */}
-                            <div className="md:hidden mt-4">
-                                <Link href={item.href} className="text-white underline text-sm">{t.explore}</Link>
+                            {/* Mobile CTA - Always visible and distinctive */}
+                            <div className="md:hidden mt-6">
+                                <span className="inline-flex w-full justify-between items-center px-4 py-3 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-lg font-bold uppercase tracking-widest text-xs hover:bg-white/20 transition-all">
+                                    {t.enter}
+                                    <ArrowRight size={16} className="rtl:rotate-180" />
+                                </span>
                             </div>
                         </div>
                     </motion.div>

@@ -25,6 +25,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -32,12 +33,20 @@
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
 
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
 
 /* RTL Support Utilities if needed (Tailwind v4 handles logical properties well, e.g. ms-auto, ps-4, etc.) */
 /* We can add specific rtl-only overrides with [dir="rtl"] selector if strictly required, but usually standard utilities suffice. */

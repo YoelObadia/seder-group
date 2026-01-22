@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { ArrowRight } from 'lucide-react';
+import { useLocale } from 'next-intl';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function VisionSection({ dict }: { dict: any }) {
@@ -11,6 +12,10 @@ export function VisionSection({ dict }: { dict: any }) {
     if (!dict?.home?.vision) return null;
     const vision = dict.home.vision;
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const locale = useLocale();
+    const isRtl = locale === 'he';
+
     return (
         <section className="relative w-full min-h-screen py-24 md:py-0 bg-[#0f172a] flex flex-col items-center justify-center overflow-hidden">
             <div className="container mx-auto px-6 md:px-12 w-full">
@@ -18,7 +23,7 @@ export function VisionSection({ dict }: { dict: any }) {
 
                     {/* LEFT COLUMN - IDENTITY */}
                     <motion.div
-                        initial={{ opacity: 0, x: -30 }}
+                        initial={{ opacity: 0, x: isRtl ? 30 : -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-10%" }}
                         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
@@ -44,7 +49,7 @@ export function VisionSection({ dict }: { dict: any }) {
 
                     {/* RIGHT COLUMN - CONTENT */}
                     <motion.div
-                        initial={{ opacity: 0, x: 30 }}
+                        initial={{ opacity: 0, x: isRtl ? -30 : 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-10%" }}
                         transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}

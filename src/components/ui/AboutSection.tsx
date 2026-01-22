@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
+import { useLocale } from 'next-intl';
 
 interface AboutSectionProps {
     title: string;
@@ -12,6 +13,10 @@ interface AboutSectionProps {
 }
 
 export function AboutSection({ title, description, image, inverted = false }: AboutSectionProps) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const locale = useLocale();
+    const isRtl = locale === 'he';
+
     return (
         <section className="py-24 md:py-32 bg-white">
             <div className="container mx-auto px-4">
@@ -22,7 +27,7 @@ export function AboutSection({ title, description, image, inverted = false }: Ab
 
                     {/* Text Content */}
                     <motion.div
-                        initial={{ opacity: 0, x: inverted ? 50 : -50 }}
+                        initial={{ opacity: 0, x: inverted ? (isRtl ? -50 : 50) : (isRtl ? 50 : -50) }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}

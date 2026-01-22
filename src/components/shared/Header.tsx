@@ -61,6 +61,13 @@ export function Header({ locale }: { locale: string }) {
         throw new Error('Function not implemented.');
     }
 
+    // RTL Logic
+    const isRtl = locale === 'he';
+    const menuVariants = {
+        closed: { opacity: 0, x: isRtl ? '-100%' : '100%' },
+        open: { opacity: 1, x: 0 },
+    };
+
     return (
         <header className={headerClass}>
             <div className="w-full px-4 md:px-8 lg:px-12 flex items-center justify-between">
@@ -115,9 +122,10 @@ export function Header({ locale }: { locale: string }) {
                 <AnimatePresence>
                     {isOpen && (
                         <motion.div
-                            initial={{ opacity: 0, x: '100%' }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: '100%' }}
+                            initial="closed"
+                            animate="open"
+                            exit="closed"
+                            variants={menuVariants}
                             transition={{ type: "spring", bounce: 0, duration: 0.4 }}
                             className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center gap-6 md:hidden h-dvh overflow-y-auto py-20"
                         >

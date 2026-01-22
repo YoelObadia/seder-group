@@ -58,14 +58,14 @@ export function HeroSection({
 
                 {/* 2. Masterpiece Title - LCP ELEMENT - CSS Animation */}
                 <h1
-                    className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-white tracking-tighter mb-6 drop-shadow-xl animate-fade-in-up delay-100 opacity-0 fill-mode-forwards"
+                    className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-white tracking-tighter mb-6 drop-shadow-xl animate-fade-in-up delay-100"
                     style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                 >
                     {heroContent.title}
                 </h1>
 
                 {/* 3. Elegant Separator - CSS Animation */}
-                <div className="w-24 h-[1px] bg-white/30 mb-8 animate-fade-in-up delay-200 opacity-0 fill-mode-forwards" />
+                <div className="w-24 h-[1px] bg-white/30 mb-8 animate-fade-in-up delay-200" />
 
                 {/* 4. Subtitle - Client Side Text Reveal (Acceptable to be delayed slightly) */}
                 <div className="mb-4">
@@ -79,7 +79,7 @@ export function HeroSection({
 
                 {/* 5. Motto - CSS Animation */}
                 <p
-                    className="text-lg md:text-2xl text-slate-200 font-serif italic opacity-90 animate-fade-in-up delay-300 fill-mode-forwards"
+                    className="text-lg md:text-2xl text-slate-200 font-serif italic opacity-90 animate-fade-in-up delay-300"
                 >
                     &quot;{heroContent.motto}&quot;
                 </p>

@@ -21,7 +21,7 @@ export default function BusinessClient() {
     };
 
     return (
-        <div className="min-h-screen text-white py-24 px-4 md:px-8 flex flex-col items-center">
+        <div className="min-h-screen text-white pt-40 pb-24 md:py-24 px-4 md:px-8 flex flex-col items-center">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -33,7 +33,7 @@ export default function BusinessClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-white"
+                    className="text-3xl md:text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-white"
                 >
                     {t('title')}
                 </motion.h1>
@@ -62,7 +62,7 @@ export default function BusinessClient() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 + (index * 0.1), duration: 0.6 }}
-                        className="space-y-4"
+                        className="space-y-4 text-start"
                     >
                         <h3 className="text-2xl font-bold text-white mb-2">{t(item.title)}</h3>
                         <p className="text-slate-400 leading-relaxed text-base">
