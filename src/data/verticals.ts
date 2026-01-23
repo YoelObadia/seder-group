@@ -35,7 +35,7 @@ export const verticals: Record<string, VerticalShowcase> = {
             {
                 name: 'Consulting',
                 description: 'Expert guidance on market penetration and growth.',
-                url: 'https://seder-business.vercel.app',
+                url: 'https://seder-business.com',
                 image: '/images/business-card.webp'
             },
             {
@@ -54,7 +54,7 @@ export const verticals: Record<string, VerticalShowcase> = {
             {
                 name: 'Seder Music',
                 description: 'Discover our roster and latest releases.',
-                url: 'https://seder-musique.vercel.app',
+                url: 'https://seder-music.com',
                 image: '/images/music-card.webp'
             }
         ]
