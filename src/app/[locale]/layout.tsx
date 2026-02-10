@@ -29,7 +29,27 @@ export async function generateMetadata({
         description: t('defaultDescription'),
         manifest: '/manifest.json',
         icons: {
-            icon: '/favicon.ico',
+            icon: '/images/logo.webp',
+            apple: '/images/logo.webp',
+        },
+        openGraph: {
+            title: t('defaultTitle'),
+            description: t('defaultDescription'),
+            images: [
+                {
+                    url: '/images/logo.webp',
+                    width: 1200,
+                    height: 630,
+                    alt: 'Seder Group Logo',
+                },
+            ],
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: t('defaultTitle'),
+            description: t('defaultDescription'),
+            images: ['/images/logo.webp'],
         },
     };
 }
@@ -59,7 +79,7 @@ export default async function LocaleLayout({
         name: 'Seder Group',
         legalName: 'Seder Group Ltd.',
         url: 'https://seder-group.com',
-        logo: 'https://seder-group.com/logo.webp',
+        logo: 'https://seder-group.com/images/logo.webp',
         description: "Holding de luxe spécialisée dans l'événementiel, la production musicale et la conciergerie privée pour UHNWI.",
         foundingDate: '2020',
         founders: [
