@@ -84,8 +84,9 @@ export default function BusinessClient() {
                         className="w-full max-w-xs mx-auto"
                     >
                         <ExternalLinkCard
+                            key={brand.name}
                             title={brand.name}
-                            description={brand.description}
+                            description={t(`brands.${brand.description}`)}
                             url={brand.url}
                             image={brand.image}
                             className="shadow-2xl aspect-[3/4]"

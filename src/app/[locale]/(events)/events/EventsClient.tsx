@@ -114,7 +114,7 @@ export default function EventsClient() {
                 >
                     <ExternalLinkCard
                         title={kotelEvent.name}
-                        description={t('cta')}
+                        description={t(`brands.${kotelEvent.description}`)}
                         url={kotelEvent.url}
                         image={kotelEvent.image}
                         className="shadow-2xl aspect-[3/4]"

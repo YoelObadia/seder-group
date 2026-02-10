@@ -84,7 +84,7 @@ export default function MusicClient() {
                 >
                     <ExternalLinkCard
                         title={mainBrand.name}
-                        description={mainBrand.description}
+                        description={t(`brands.${mainBrand.description}`)}
                         url={mainBrand.url}
                         image={mainBrand.image}
                         className="shadow-2xl aspect-[3/4] shadow-red-900/20"

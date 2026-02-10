@@ -4,11 +4,11 @@ export const verticals: Record<string, VerticalShowcase> = {
     events: {
         id: 'events',
         title: 'Seder Events',
-        description: 'Creating unforgettable moments through precision and elegance.',
+        description: 'description',
         brands: [
             {
                 name: 'Kotel Event',
-                description: 'Premium religious and private celebrations at the Western Wall.',
+                description: 'kotel_event',
                 url: 'https://kotel-event.com',
                 image: '/images/ke-card.webp' // Placeholder
             }
@@ -17,11 +17,11 @@ export const verticals: Record<string, VerticalShowcase> = {
     uhnwi: {
         id: 'uhnwi',
         title: 'Seder UHNWI',
-        description: 'Exclusivity redefined for the few.',
+        description: 'description',
         brands: [
             {
                 name: 'UHNWI',
-                description: 'Exclusive event planning for Ultra-High-Net-Worth Individuals.',
+                description: 'uhnwi',
                 url: 'https://luxury-israel-event.com', // Fictional link as requested
                 image: '/images/uhnwi-card.webp' // Placeholder
             }
@@ -30,17 +30,17 @@ export const verticals: Record<string, VerticalShowcase> = {
     business: {
         id: 'business',
         title: 'Seder Business',
-        description: 'Strategic excellence for the modern entertainment landscape.',
+        description: 'description',
         brands: [
             {
                 name: 'Consulting',
-                description: 'Expert guidance on market penetration and growth.',
+                description: 'consulting',
                 url: 'https://seder-business.com',
                 image: '/images/business-card.webp'
             },
             {
-                name: 'Conciergerie',
-                description: 'Luxury lifestyle management and corporate solutions.',
+                name: 'Concierge',
+                description: 'conciergerie',
                 url: 'https://concierge-seder.com',
                 image: '/images/concierge-card.webp'
             }
@@ -49,11 +49,11 @@ export const verticals: Record<string, VerticalShowcase> = {
     music: {
         id: 'music',
         title: 'Seder Music',
-        description: 'A global label amplifying the voices of tomorrow.',
+        description: 'description',
         brands: [
             {
                 name: 'Seder Music',
-                description: 'Discover our roster and latest releases.',
+                description: 'seder_music',
                 url: 'https://seder-music.com',
                 image: '/images/music-card.webp'
             }

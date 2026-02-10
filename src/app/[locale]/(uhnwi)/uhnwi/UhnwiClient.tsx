@@ -96,7 +96,7 @@ export default function UhnwiClient() {
                 >
                     <ExternalLinkCard
                         title={mainBrand.name}
-                        description={mainBrand.description}
+                        description={t(`brands.${mainBrand.description}`)}
                         url={mainBrand.url}
                         image={mainBrand.image}
                         className="shadow-2xl shadow-[#dbb369]/10 aspect-[3/4] border border-[#dbb369]/20"

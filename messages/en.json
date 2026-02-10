@@ -105,7 +105,10 @@
         "point3_title": "Elegance",
         "point3_desc": "Details, aesthetics, global harmony.",
         "conclusion": "Each project is treated as a bespoke piece: from the first intention to the last minute of the evening, with a team that pilots, secures, and sublimates.",
-        "cta": "Visit Kotel Event"
+        "cta": "Visit Kotel Event",
+        "brands": {
+            "kotel_event": "Premium religious and private celebrations at the Western Wall."
+        }
     },
     "UHNWIPage": {
         "metadata": {
@@ -117,7 +120,10 @@
         "service_desc": "Here, everything is ultra-personalized, confidential, and frictionless. We operate as a private conductor: lifestyle management, bespoke travel, access, hospitality, rare experiences, and prestigious events — with total mastery of execution, detail, and protocol.",
         "promise_title": "Our Promise",
         "promise_desc": "A discreet but total presence. Anticipation, precision, network, high standards — and above all, an ability to deliver what is not accessible to the common: the right place, the right person, the right timing, the right execution.",
-        "conclusion": "Seder UHNWI is a universe apart within the Seder ecosystem and depends on no other platform."
+        "conclusion": "Seder UHNWI is a universe apart within the Seder ecosystem and depends on no other platform.",
+        "brands": {
+            "uhnwi": "Exclusive event planning for Ultra-High-Net-Worth Individuals."
+        }
     },
     "MusicPage": {
         "metadata": {
@@ -129,7 +135,10 @@
         "value_prop": "Our power rests on a triple value:",
         "point1": "<b>Star Booking & Premium Productions:</b> access and orchestration of very high-level performances, guaranteeing impeccable execution, high technical standards, and absolute discretion.",
         "point2": "<b>Influence & Activation:</b> we turn talent audiences into high-performing content that drives measurable results.",
-        "point3": "<b>R&D Records Label — The Stars of Tomorrow:</b> beyond the headliners, we detect and develop rising talents, accompany them artistically, and structure their rise to power to create the icons of the next generation."
+        "point3": "<b>R&D Records Label — The Stars of Tomorrow:</b> beyond the headliners, we detect and develop rising talents, accompany them artistically, and structure their rise to power to create the icons of the next generation.",
+        "brands": {
+            "seder_music": "Discover our roster and latest releases."
+        }
     },
     "BusinessPage": {
         "metadata": {
@@ -144,6 +153,10 @@
         "network_desc": "When a company faces a critical gap, we know how to identify and approach the right people. We operate as a trusted operator: analysis, strategy, targeting, and finalization.",
         "realty_title": "Real Estate & Concierge",
         "realty_desc": "Specialization in Jerusalem real estate and integrated concierge services. We manage the entire chain: profitability, operations, administration, and coordination, with the same rigor.",
-        "cta": "Contact Seder Business"
+        "cta": "Contact Seder Business",
+        "brands": {
+            "consulting": "Expert guidance on market penetration and growth.",
+            "conciergerie": "Luxury lifestyle management and corporate solutions."
+        }
     }
 }
