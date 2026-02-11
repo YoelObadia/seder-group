@@ -213,7 +213,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
                             <div className="absolute inset-[2px] rounded-2xl overflow-hidden bg-[#0a0a0a]">
                                 {/* IMAGE AVEC EFFET N&B VERS COULEUR */}
                                 <Image
-                                    src="/images/picture.webp"
+                                    src="/images/pp.webp"
                                     alt={founderData.name}
                                     fill
                                     className="object-cover transition-all duration-700 ease-out"
