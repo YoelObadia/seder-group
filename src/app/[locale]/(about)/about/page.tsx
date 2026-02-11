@@ -112,6 +112,30 @@ export default function AboutPage() {
                                 </p>
                             </motion.div>
                         ))}
+
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={fadeInUp}
+                            transition={{ delay: 0.5 }}
+                            className="pt-8"
+                        >
+                            <a
+                                href={t('artist_link')}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-amber-400/50 text-amber-400 font-serif text-lg tracking-wide transition-all duration-300 group rounded-sm"
+                            >
+                                {t('artist_label')}
+                                <span className={cn(
+                                    "transition-transform duration-300 group-hover:translate-x-1",
+                                    isRtl && "rotate-180 group-hover:-translate-x-1"
+                                )}>
+                                    →
+                                </span>
+                            </a>
+                        </motion.div>
                     </div>
                 </section>
 
