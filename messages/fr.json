@@ -77,9 +77,11 @@
     "AboutPage": {
         "title": "La naissance de Seder",
         "subtitle": "Seder est né d’un mot — et d’un chemin.",
-        "p1": "Au-delà de l’acronyme de mes initiales — Skouri David Raphaël — Seder (סדר) incarne une philosophie fondamentale : celle de l’Ordre. Mon approche repose sur une idée simple : transformer ce qui est complexe — une relation, une décision, un événement ou un projet — en quelque chose de clair, structuré et maîtrisé. Avec un objectif constant : plus d’efficacité, plus de contrôle, et plus de sérénité. »",
+        "p1": "Au-delà de l’acronyme de mes initiales — Skouri David Raphaël — Seder (סדר) incarne une philosophie fondamentale : celle de l’Ordre. Mon approche repose on une idée simple : transformer ce qui est complexe — une relation, une décision, un événement ou un projet — en quelque chose de clair, structuré et maîtrisé. Avec un objectif constant : plus d’efficacité, plus de contrôle, et plus de sérénité. »",
         "p2": "Mon parcours s’est construit sur une double exigence, au plus haut niveau : l’exigence artistique et l’exigence business.",
         "p3": "Je suis artiste, chanteur andalou d’origine marocaine, hazan, et j’interviens régulièrement lors d’événements à dimension religieuse. Un grand artiste n’est jamais “simplement” un artiste. Il vit dans la rigueur, la précision, l’exigence du détail, la maîtrise de l’émotion — et le respect de l’exécution. Cette discipline, patiemment construite, m’a appris ce qu’est l’excellence. Elle m’a surtout préparé à la reconnaître, puis à la transposer, avec la même exigence, dans le monde du business.",
+        "artist_label": "Visiter mon site artistique.",
+        "artist_link": "https://raphaelskouri.com",
         "p4": "Au fil des années, ma présence au cœur de la communauté — et les liens de confiance qu’elle fait naître — ont naturellement élargi mon rôle. Peu à peu, l’on ne m’a plus seulement attendu sur scène : on m’a sollicité pour porter, coordonner, et sécuriser ce qui se joue autour d’elle. Des responsabilités sont venues, discrètement d’abord, puis avec une évidence croissante : organiser des mariages, des bar et bat mitsvas, des célébrations, dans des contextes où tout devait être irréprochable, fluide, et profondément respectueux.",
         "p5": "Parallèlement, l’immobilier est devenu un autre terrain d’exigence : appartements à gérer, prestataires à coordonner, décisions à prendre avec justesse et rapidité. Puis, presque naturellement, s’est ajoutée une dimension plus large : l’hospitalité, la conciergerie, le “lifestyle” au sens noble du terme — accueillir, prévoir, anticiper, protéger, et rendre simple la vie de personnes dont le niveau d’exigence ne laisse aucune place à l’improvisation. De cet ensemble d’expériences est née une compétence centrale : une capacité d’organisation réelle, forgée sur le terrain, au contact de standards élevés.",
         "p6": "J’ai vécu plusieurs années aux États-Unis, et cette période a élargi mon réseau autant qu’elle a affiné mon regard. Au départ, certaines portes se sont ouvertes par bienveillance : on voyait en moi l’artiste. Puis la relation s’est approfondie ; la confiance s’est installée. On m’a confié des missions, des décisions, parfois même la coordination d’équipes entières lors de déplacements. J’ai ainsi appris le business auprès de personnes qui ont réussi — en observant leur méthode, en intégrant leur mentalité, et en comprenant leurs standards.",
@@ -87,8 +89,6 @@
         "p8": "Seder : le lien entre créativité, structure, médiation et exécution.",
         "p9": "Aujourd’hui, en Israël, on me sollicite pour les mêmes raisons : la fiabilité, la discrétion, cette capacité à faire avancer les choses, et à tenir la promesse du résultat là où tant d’autres se heurtent aux limites du réel. Seder Group n’est pas une idée posée sur le papier ; c’est l’aboutissement d’un parcours vécu, éprouvé, puis structuré — une alliance de compétences pensée pour servir, et pour accomplir, au plus haut niveau.",
         "sidebar_title": "GENÈSE",
-        "artist_label": "Visiter le site officiel",
-        "artist_link": "https://raphaelskouri.com",
         "closing": "Avec Seder, mettez de l'ordre dans votre vie."
     },
     "EventsPage": {

@@ -62,6 +62,8 @@ export default function AboutPage() {
                         <p className="text-2xl md:text-4xl leading-relaxed font-serif text-slate-200">
                             {t('p1')}
                         </p>
+
+
                         <p className="text-xl md:text-2xl leading-relaxed text-slate-400 font-light">
                             {t('p2')}
                         </p>
@@ -109,33 +111,25 @@ export default function AboutPage() {
                                     i === 0 && "first-letter:text-5xl first-letter:font-serif first-letter:text-amber-400 first-letter:float-start first-letter:me-3 first-letter:mt-1"
                                 )}>
                                     {t(key)}
+                                    {key === 'p3' && (
+                                        <a
+                                            href={t('artist_link')}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1.5 ms-3 text-amber-400 hover:text-amber-300 transition-colors duration-300 font-serif group"
+                                        >
+                                            <span className="underline underline-offset-4 decoration-amber-400/30 group-hover:decoration-amber-300">{t('artist_label')}</span>
+                                            <span className={cn(
+                                                "transition-transform duration-300 group-hover:translate-x-1",
+                                                isRtl && "rotate-180 group-hover:-translate-x-1"
+                                            )}>
+                                            </span>
+                                        </a>
+                                    )}
                                 </p>
                             </motion.div>
                         ))}
 
-                        <motion.div
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            variants={fadeInUp}
-                            transition={{ delay: 0.5 }}
-                            className="pt-8"
-                        >
-                            <a
-                                href={t('artist_link')}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-amber-400/50 text-amber-400 font-serif text-lg tracking-wide transition-all duration-300 group rounded-sm"
-                            >
-                                {t('artist_label')}
-                                <span className={cn(
-                                    "transition-transform duration-300 group-hover:translate-x-1",
-                                    isRtl && "rotate-180 group-hover:-translate-x-1"
-                                )}>
-                                    →
-                                </span>
-                            </a>
-                        </motion.div>
                     </div>
                 </section>
 
