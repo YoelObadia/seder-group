@@ -182,7 +182,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-screen py-24 md:py-0 flex items-center overflow-hidden"
+            className="relative min-h-[100dvh] lg:min-h-0 lg:h-[calc(100vh-80px)] pt-20 md:pt-24 pb-8 flex items-center justify-center overflow-hidden w-full max-w-[100vw]"
             style={{ background: BG_COLOR }}
         >
             {/* Background ambient glow */}
@@ -193,40 +193,36 @@ export function FounderSection({ dict }: FounderSectionProps) {
                 }}
             />
 
-            <div className="container mx-auto px-6 relative z-10">
-                {/* 12-column grid: image 5 cols, gap 1 col, content 6 cols */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-center">
+            <div className="container mx-auto px-4 md:px-6 relative z-10 w-full overflow-hidden">
+                {/* Responsive grid: Image on top on mobile but smaller, Content below */}
+                <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-0 items-center justify-center">
 
                     {/* ═══ PORTRAIT SIDE (5 columns) ═══ */}
-                    <div className="lg:col-span-5 relative">
+                    <div className="lg:col-span-5 relative w-full flex justify-center lg:justify-end">
                         <motion.div
                             ref={imageRef}
                             style={{ y: smoothImageY }}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
-                            className="relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer"
+                            className="relative aspect-[3/4] w-[45%] sm:w-[40%] md:w-[35%] lg:w-[80%] xl:w-[70%] max-w-[280px] lg:max-w-none rounded-2xl overflow-hidden group cursor-pointer"
                         >
                             {/* Scanning Gold Border */}
                             <ScanningBorder />
 
                             {/* Image Container */}
                             <div className="absolute inset-[2px] rounded-2xl overflow-hidden bg-[#0a0a0a]">
-                                {/* IMAGE AVEC EFFET N&B VERS COULEUR */}
                                 <Image
                                     src="/images/pp.webp"
                                     alt={founderData.name}
                                     fill
                                     className="object-cover transition-all duration-700 ease-out"
                                     style={{
-                                        // C'est ici que la magie opère :
-                                        // grayscale(1) = Noir et Blanc
-                                        // grayscale(0) = Couleur
                                         filter: isHovered
                                             ? 'grayscale(0) brightness(1.1) contrast(1.05)'
                                             : 'grayscale(1) brightness(0.9) contrast(1.1)',
                                         transform: isHovered ? 'scale(1.05)' : 'scale(1)',
                                     }}
-                                    sizes="(max-width: 768px) 100vw, 40vw"
+                                    sizes="(max-width: 1024px) 50vw, 30vw"
                                     priority
                                 />
 
@@ -234,12 +230,12 @@ export function FounderSection({ dict }: FounderSectionProps) {
                                 <FilmGrain />
 
                                 {/* Bottom gradient overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent z-10" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10" />
 
                                 {/* Name & Role at bottom */}
-                                <div className="absolute bottom-8 left-8 right-8 z-20">
+                                <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 z-20">
                                     <motion.h3
-                                        className="text-3xl md:text-4xl font-bold text-white mb-2 uppercase tracking-tight"
+                                        className="text-lg md:text-3xl lg:text-4xl font-bold text-white mb-1 md:mb-2 uppercase tracking-tight"
                                         style={{
                                             fontFamily: 'var(--font-montserrat), sans-serif',
                                             letterSpacing: isHovered ? '0.1em' : '0em',
@@ -249,7 +245,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
                                         {founderData.name}
                                     </motion.h3>
                                     <p
-                                        className="text-sm tracking-[0.3em] uppercase font-mono"
+                                        className="text-[9px] md:text-xs tracking-[0.2em] md:tracking-[0.3em] uppercase font-mono"
                                         style={{ color: GOLD, fontFamily: 'var(--font-heebo), sans-serif' }}
                                     >
                                         {founderData.role}
@@ -260,7 +256,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
                                 <div
                                     className="absolute inset-0 pointer-events-none z-10"
                                     style={{
-                                        boxShadow: 'inset 0 0 100px rgba(0,0,0,0.6)',
+                                        boxShadow: 'inset 0 0 50px rgba(0,0,0,0.6)',
                                     }}
                                 />
                             </div>
@@ -271,23 +267,23 @@ export function FounderSection({ dict }: FounderSectionProps) {
                     <div className="hidden lg:block lg:col-span-1" />
 
                     {/* ═══ CONTENT SIDE (6 columns) ═══ */}
-                    <div ref={contentRef} className="lg:col-span-6 space-y-12">
+                    <div ref={contentRef} className="lg:col-span-6 w-full space-y-5 md:space-y-8 flex flex-col justify-center text-center lg:text-start">
 
                         {/* Section Title */}
                         <motion.div
                             initial={{ opacity: 0, x: isRtl ? -50 : 50 }}
                             animate={isContentInView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-                            className="space-y-4"
+                            className="space-y-2 md:space-y-4"
                         >
                             <span
-                                className="text-xs font-mono tracking-[0.5em] uppercase"
+                                className="text-[10px] md:text-xs font-mono tracking-[0.5em] uppercase"
                                 style={{ color: GOLD, fontFamily: 'var(--font-heebo), sans-serif' }}
                             >
                                 {founderData.label}
                             </span>
                             <h2
-                                className="text-5xl md:text-7xl lg:text-8xl font-bold text-white uppercase tracking-tight leading-[0.9]"
+                                className="text-[7vw] sm:text-[6vw] md:text-5xl lg:text-[4vw] xl:text-6xl font-bold text-white uppercase tracking-tight leading-[0.9] whitespace-nowrap"
                                 style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                             >
                                 {founderData.title}
@@ -296,7 +292,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
                                 initial={{ scaleX: 0 }}
                                 animate={isContentInView ? { scaleX: 1 } : {}}
                                 transition={{ duration: 1, delay: 0.3, ease: [0.25, 1, 0.5, 1] }}
-                                className="w-24 h-[3px] ltr:origin-left rtl:origin-right"
+                                className="w-16 md:w-24 h-[3px] mx-auto lg:mx-0 ltr:origin-left rtl:origin-right"
                                 style={{ background: GOLD }}
                             />
                         </motion.div>
@@ -306,24 +302,24 @@ export function FounderSection({ dict }: FounderSectionProps) {
                             initial={{ opacity: 0, y: 30 }}
                             animate={isContentInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
-                            className="grid grid-cols-2 gap-8 md:gap-12"
+                            className="grid grid-cols-2 gap-4 md:gap-8 justify-items-center lg:justify-items-start"
                         >
                             {/* Years */}
-                            <div className="space-y-3">
+                            <div className="space-y-1 md:space-y-3">
                                 <div className="flex items-baseline gap-1">
                                     <span
-                                        className="text-5xl md:text-6xl lg:text-7xl font-bold"
+                                        className="text-4xl md:text-6xl lg:text-7xl font-bold"
                                         style={{ color: GOLD, fontFamily: 'var(--font-montserrat), sans-serif' }}
                                     >
                                         <GlowingCounter value={15} />
                                     </span>
                                     <span
-                                        className="text-3xl md:text-4xl font-bold text-white"
+                                        className="text-2xl md:text-4xl font-bold text-white"
                                         style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                                     >+</span>
                                 </div>
                                 <p
-                                    className="text-sm text-white/50 uppercase tracking-[0.2em] font-mono"
+                                    className="text-[10px] md:text-sm text-white/50 uppercase tracking-[0.2em] font-mono"
                                     style={{ fontFamily: 'var(--font-heebo), sans-serif' }}
                                 >
                                     {founderData.stats.years}
@@ -331,21 +327,21 @@ export function FounderSection({ dict }: FounderSectionProps) {
                             </div>
 
                             {/* Projects */}
-                            <div className="space-y-3">
+                            <div className="space-y-1 md:space-y-3">
                                 <div className="flex items-baseline gap-1">
                                     <span
-                                        className="text-5xl md:text-6xl lg:text-7xl font-bold"
+                                        className="text-4xl md:text-6xl lg:text-7xl font-bold"
                                         style={{ color: GOLD, fontFamily: 'var(--font-montserrat), sans-serif' }}
                                     >
                                         <GlowingCounter value={500} duration={3} />
                                     </span>
                                     <span
-                                        className="text-3xl md:text-4xl font-bold text-white"
+                                        className="text-2xl md:text-4xl font-bold text-white"
                                         style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                                     >+</span>
                                 </div>
                                 <p
-                                    className="text-sm text-white/50 uppercase tracking-[0.2em] font-mono"
+                                    className="text-[10px] md:text-sm text-white/50 uppercase tracking-[0.2em] font-mono"
                                     style={{ fontFamily: 'var(--font-heebo), sans-serif' }}
                                 >
                                     {founderData.stats.projects}
@@ -358,7 +354,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
                             initial={{ opacity: 0, y: 30 }}
                             animate={isContentInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 1, 0.5, 1] }}
-                            className="relative p-8 md:p-10 rounded-2xl overflow-hidden"
+                            className="relative p-6 md:p-10 rounded-2xl overflow-hidden mt-4 lg:mt-0"
                             style={{
                                 background: 'rgba(255,255,255,0.03)',
                                 backdropFilter: 'blur(20px)',
