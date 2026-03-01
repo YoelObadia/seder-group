@@ -6,8 +6,8 @@
     "home": {
         "hero": {
             "title": "SEDER GROUP",
-            "subtitle": "MUSIQUE • ÉVÉNEMENTS • UHNWI • BUSINESS",
-            "badge": "HOLDING",
+            "subtitle": "MUSIQUE • ÉVÉNEMENTS • BUSINESS",
+            "badge": "R&D Aura",
             "motto": "Orchestrer l'excellence."
         },
         "vision": {
@@ -37,10 +37,6 @@
                     "title": "SEDER EVENTS",
                     "description": "Créer des moments inoubliables par la précision et l'élégance."
                 },
-                "uhnwi": {
-                    "title": "SEDER UHNWI",
-                    "description": "L'exclusivité redéfinie pour quelques privilégiés."
-                },
                 "business": {
                     "title": "SEDER BUSINESS",
                     "description": "L'excellence stratégique pour le paysage moderne du divertissement."
@@ -63,8 +59,7 @@
         "about": "À Propos",
         "business": "Business",
         "events": "Événements",
-        "music": "Musique",
-        "uhnwi": "UHNWI"
+        "music": "Musique"
     },
     "Footer": {
         "slogan": "Un écosystème unifié pour l'excellence et l'art.",
@@ -106,25 +101,13 @@
         "point2_desc": "Avec une sensibilité authentique.",
         "point3_title": "Élégance",
         "point3_desc": "Détails, esthétique, harmonie globale.",
+        "point4_title": "Hébergement & Conciergerie",
+        "point4_desc": "Location d'appartements dans le quartier juif de la vieille ville de Jérusalem, idéal pour loger sur place la veille d'un événement ou pour un Chabat Hatan.",
         "conclusion": "Chaque projet est traité comme une pièce sur-mesure : de la première intention à la dernière minute de la soirée, avec une équipe qui pilote, sécurise et sublime.",
         "cta": "Visiter Kotel Event",
         "brands": {
-            "kotel_event": "Célébrations religieuses et privées haut de gamme au Mur des Lamentations."
-        }
-    },
-    "UHNWIPage": {
-        "metadata": {
-            "title": "Seder UHNWI | Family Office & Lifestyle Management Israel",
-            "description": "Services ultra-privés pour UHNWI. Gestion de fortune, sécurité rapprochée et accès exclusif aux propriétés de luxe en Israël."
-        },
-        "title": "Seder UHNWI",
-        "intro": "Seder UHNWI est le département le plus exclusif de Seder Group, pensé pour une clientèle Ultra High Net Worth qui exige un niveau de service comparable aux meilleures maisons internationales.",
-        "service_desc": "Ici, tout est ultra-personnalisé, confidentiel et sans friction. Nous opérons comme un chef d’orchestre privé : lifestyle management, voyages sur-mesure, accès, hospitalité, expériences rares, et événements de prestige — avec une maîtrise totale de l’exécution, du détail et du protocole.",
-        "promise_title": "Notre Promesse",
-        "promise_desc": "Une présence discrète mais totale. Anticipation, précision, réseau, standards élevés — et surtout une capacité à délivrer ce qui n’est pas accessible au commun : le bon lieu, la bonne personne, le bon timing, la bonne exécution.",
-        "conclusion": "Seder UHNWI est la division la plus exclusive de Seder Events, au sein de Seder Group. Elle est réservée à une clientèle ultra-prestige, habituée à l’exceptionnel, et fonctionne comme une entité dédiée — avec ses standards, ses équipes et ses partenaires, sans compromis.",
-        "brands": {
-            "uhnwi": "Planification d'événements exclusifs pour les particuliers à très haut patrimoine."
+            "kotel_event": "Célébrations religieuses et privées haut de gamme au Mur des Lamentations.",
+            "conciergerie": "Location d'appartements de prestige dans la vieille ville pour loger vos invités lors de vos événements sur place."
         }
     },
     "MusicPage": {
@@ -153,12 +136,14 @@
         "mediation_desc": "Nous intervenons là où les échanges sont tendus, où les intérêts divergent, où la confiance est fragile. Notre signature, c’est une ingénierie de résolution : transformer un problème en solution, avec méthode, discrétion et standards élevés.",
         "network_title": "Réseau Relationnel",
         "network_desc": "Lorsque qu’une entreprise fait face à un manque critique, nous savons identifier et approcher les bonnes personnes. Nous opérons comme un opérateur de confiance : analyse, stratégie, ciblage et finalisation.",
-        "realty_title": "Immobilier & Conciergerie",
-        "realty_desc": "Spécialisation dans l’immobilier à Jérusalem et conciergerie intégrée. Nous gérons la chaîne complète : rentabilité, opérations, administratif et coordination, avec la même rigueur.",
+        "realty_title": "Immobilier",
+        "realty_desc": "Spécialisation dans l’immobilier à Jérusalem. Nous gérons la chaîne complète de l'investissement : rentabilité, opérations, administratif et coordination, avec une grande rigueur.",
+        "uhnwi_title": "Seder UHNWI",
+        "uhnwi_desc": "Services ultra-privés et hautement personnalisés pour les Ultra High Net Worth Individuals. Lifestyle management, sécurité rapprochée et protocoles ultra-confidentiels.",
         "cta": "Contactez Seder Business",
         "brands": {
             "consulting": "Conseil expert en pénétration de marché et croissance.",
-            "conciergerie": "Gestion de style de vie de luxe et solutions d'entreprise."
+            "uhnwi": "Planification d'événements exclusifs pour les particuliers à très haut patrimoine."
         }
     }
 }

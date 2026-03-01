@@ -27,7 +27,6 @@ export function Header({ locale }: { locale: string }) {
     const isBusiness = pathname.includes('/business');
     const isMusic = pathname.includes('/music');
     const isEvents = pathname.includes('/events');
-    const isUHNWI = pathname.includes('/uhnwi');
 
     // Dynamic styling
     const headerClass = cn(
@@ -44,8 +43,8 @@ export function Header({ locale }: { locale: string }) {
                 ? "bg-black/60 border-white/5 text-white"
                 : "text-white border-white/5",
 
-        // Specific overrides for Business/UHNWI on scroll (Light header on Dark page)
-        !isEvents && (isBusiness || isUHNWI) && scrolled && "bg-white/80 border-gray-200 text-slate-900"
+        // Specific overrides for Business on scroll (Light header on Dark page)
+        !isEvents && isBusiness && scrolled && "bg-white/80 border-gray-200 text-slate-900"
     );
 
     const navLinks = [
@@ -53,7 +52,6 @@ export function Header({ locale }: { locale: string }) {
         { href: '/about', label: 'about' },
         { href: '/music', label: 'music' },
         { href: '/events', label: 'events' },
-        { href: '/uhnwi', label: 'uhnwi' },
         { href: '/business', label: 'business' },
     ];
 
@@ -105,7 +103,7 @@ export function Header({ locale }: { locale: string }) {
 
                 {/* Actions */}
                 <div className="flex items-center gap-2 md:gap-4">
-                    <LanguageSelector forceDark={!!(isEvents || (scrolled && (isBusiness || isUHNWI)))} />
+                    <LanguageSelector forceDark={!!(isEvents || (scrolled && isBusiness))} />
                 </div>
 
                 {/* Mobile Toggle */}

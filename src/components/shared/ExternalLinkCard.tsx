@@ -23,7 +23,7 @@ export function ExternalLinkCard({ title, description, url, image, className }: 
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-                "group relative block w-full aspect-[3/5] md:aspect-[3/4] overflow-hidden rounded-2xl",
+                "group relative block w-full overflow-hidden rounded-2xl",
                 className
             )}
         >

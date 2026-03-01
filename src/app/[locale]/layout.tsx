@@ -80,7 +80,7 @@ export default async function LocaleLayout({
         legalName: 'Seder Group Ltd.',
         url: 'https://seder-group.com',
         logo: 'https://seder-group.com/images/logo.webp',
-        description: "Holding de luxe spécialisée dans l'événementiel, la production musicale et la conciergerie privée pour UHNWI.",
+        description: "Holding de luxe spécialisée dans l'événementiel, la production musicale et la conciergerie privée.",
         foundingDate: '2020',
         founders: [
             {

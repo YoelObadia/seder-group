@@ -74,7 +74,7 @@ export default function MusicClient() {
             </header>
 
             {/* CTA Section */}
-            <section className="w-full max-w-xs mx-auto relative z-10">
+            <section className="w-full max-w-4xl mx-auto relative z-10">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -87,7 +87,7 @@ export default function MusicClient() {
                         description={t(`brands.${mainBrand.description}`)}
                         url={mainBrand.url}
                         image={mainBrand.image}
-                        className="shadow-2xl aspect-[3/4] shadow-red-900/20"
+                        className="shadow-2xl h-[400px] md:h-[420px] w-full shadow-red-900/20"
                     />
                 </motion.div>
             </section>

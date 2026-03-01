@@ -11,19 +11,12 @@ export const verticals: Record<string, VerticalShowcase> = {
                 description: 'kotel_event',
                 url: 'https://kotel-event.com',
                 image: '/images/ke-card.webp' // Placeholder
-            }
-        ]
-    },
-    uhnwi: {
-        id: 'uhnwi',
-        title: 'Seder UHNWI',
-        description: 'description',
-        brands: [
+            },
             {
-                name: 'UHNWI',
-                description: 'uhnwi',
-                url: 'https://luxury-israel-event.com', // Fictional link as requested
-                image: '/images/uhnwi-card.webp' // Placeholder
+                name: 'Concierge',
+                description: 'conciergerie',
+                url: 'https://concierge-seder.com',
+                image: '/images/concierge-card.webp'
             }
         ]
     },
@@ -39,10 +32,10 @@ export const verticals: Record<string, VerticalShowcase> = {
                 image: '/images/business-card.webp'
             },
             {
-                name: 'Concierge',
-                description: 'conciergerie',
-                url: 'https://concierge-seder.com',
-                image: '/images/concierge-card.webp'
+                name: 'UHNWI',
+                description: 'uhnwi',
+                url: 'https://luxury-israel-event.com', // Fictional link as requested
+                image: '/images/uhnwi-card.webp' // Placeholder
             }
         ]
     },

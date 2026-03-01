@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/music', priority: 0.9, changeFrequency: 'weekly' as const },
         { path: '/events', priority: 0.9, changeFrequency: 'weekly' as const },
         { path: '/business', priority: 0.8, changeFrequency: 'monthly' as const },
-        { path: '/uhnwi', priority: 0.7, changeFrequency: 'monthly' as const },
     ];
 
     const sitemapEntries: MetadataRoute.Sitemap = [];

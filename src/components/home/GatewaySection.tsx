@@ -27,14 +27,6 @@ const gateways = [
         logo: '/images/events-logo(1).webp'
     },
     {
-        id: 'uhnwi',
-        vertical: verticals.uhnwi,
-        href: '/uhnwi',
-        bgClass: 'bg-[#dbb369]',
-        img: '/images/uhnwi.webp', // Luxury/Gold
-        logo: '/images/uhnwi-logo(1).webp'
-    },
-    {
         id: 'business',
         vertical: verticals.business,
         href: '/business',

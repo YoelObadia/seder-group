@@ -40,7 +40,6 @@ export function Footer() {
                         <div className="flex flex-col gap-3 text-sm md:text-base">
                             <Link href="/music" className="hover:text-white transition-colors w-fit">{tNav('music')}</Link>
                             <Link href="/events" className="hover:text-white transition-colors w-fit">{tNav('events')}</Link>
-                            <Link href="/uhnwi" className="hover:text-white transition-colors w-fit">{tNav('uhnwi')}</Link>
                             <Link href="/business" className="hover:text-white transition-colors w-fit">{tNav('business')}</Link>
                         </div>
                     </div>

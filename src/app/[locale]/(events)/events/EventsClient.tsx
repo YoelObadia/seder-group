@@ -9,7 +9,6 @@ import { BackButton } from '@/components/shared/BackButton';
 export default function EventsClient() {
     const t = useTranslations('EventsPage');
     const { events } = verticals;
-    const kotelEvent = events.brands.find(b => b.name === 'Kotel Event') || events.brands[0];
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -71,11 +70,12 @@ export default function EventsClient() {
                     {t('expertise_title')}
                 </motion.h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                     {[
                         { title: 'point1_title', desc: 'point1_desc' },
                         { title: 'point2_title', desc: 'point2_desc' },
                         { title: 'point3_title', desc: 'point3_desc' },
+                        { title: 'point4_title', desc: 'point4_desc' },
                     ].map((item, index) => (
                         <motion.div
                             key={item.title}
@@ -104,22 +104,25 @@ export default function EventsClient() {
             </motion.p>
 
             {/* CTA Section */}
-            <section className="w-full max-w-xs mx-auto">
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4, duration: 0.8 }}
-                    className="w-full"
-                >
-                    <ExternalLinkCard
-                        title={kotelEvent.name}
-                        description={t(`brands.${kotelEvent.description}`)}
-                        url={kotelEvent.url}
-                        image={kotelEvent.image}
-                        className="shadow-2xl aspect-[3/4]"
-                    />
-                </motion.div>
+            <section className="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                {events.brands.map((brand, index) => (
+                    <motion.div
+                        key={brand.name}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.4 + (index * 0.1), duration: 0.8 }}
+                        className="w-full"
+                    >
+                        <ExternalLinkCard
+                            title={brand.name}
+                            description={t(`brands.${brand.description}`)}
+                            url={brand.url}
+                            image={brand.image}
+                            className="shadow-2xl h-[400px] md:h-[420px] w-full"
+                        />
+                    </motion.div>
+                ))}
             </section>
         </div>
     );

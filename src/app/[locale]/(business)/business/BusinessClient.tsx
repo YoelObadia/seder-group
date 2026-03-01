@@ -51,11 +51,12 @@ export default function BusinessClient() {
             </header>
 
             {/* Core Value Pillars */}
-            <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-32">
+            <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-32">
                 {[
                     { title: 'mediation_title', desc: 'mediation_desc' },
                     { title: 'network_title', desc: 'network_desc' },
                     { title: 'realty_title', desc: 'realty_desc' },
+                    { title: 'uhnwi_title', desc: 'uhnwi_desc' },
                 ].map((item, index) => (
                     <motion.div
                         key={item.title}
@@ -81,7 +82,7 @@ export default function BusinessClient() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 + (index * 0.1), duration: 0.8 }}
-                        className="w-full max-w-xs mx-auto"
+                        className="w-full"
                     >
                         <ExternalLinkCard
                             key={brand.name}
@@ -89,7 +90,7 @@ export default function BusinessClient() {
                             description={t(`brands.${brand.description}`)}
                             url={brand.url}
                             image={brand.image}
-                            className="shadow-2xl aspect-[3/4]"
+                            className="shadow-2xl h-[400px] md:h-[420px] w-full"
                         />
                     </motion.div>
                 ))}
