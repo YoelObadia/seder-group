@@ -57,6 +57,7 @@
     "Navigation": {
         "home": "Accueil",
         "about": "À Propos",
+        "method": "La Méthode",
         "business": "Business",
         "events": "Événements",
         "music": "Musique"
@@ -72,7 +73,7 @@
     "AboutPage": {
         "title": "La naissance de Seder",
         "subtitle": "Seder est né d’un mot — et d’un chemin.",
-        "p1": "Au-delà de l’acronyme de mes initiales — Skouri David Raphaël — SEDER (סדר) incarne une philosophie fondamentale : celle de l’Ordre, qui est la traduction de סדר en français.",
+        "p1": "Au-delà de l’acronyme de mes initiales — Skouri David Raphaël — SEDER incarne une philosophie fondamentale : celle de l’Ordre.",
         "p2": "Mon parcours s’est construit sur une double exigence, au plus haut niveau : l’exigence artistique et l’exigence business.",
         "sidebar_title": "GENÈSE",
         "p3": "Je suis artiste, chanteur et hazan andalou d’origine marocaine et j’interviens régulièrement lors d’événements à dimension spirituelle et folklorique. Un grand artiste n’est jamais “simplement” un artiste. Il vit dans la rigueur, la précision, l’exigence du détail, la maîtrise de l’émotion et le respect de l’exécution. Cette discipline, patiemment construite, m’a appris ce qu’est l’excellence. Elle m’a surtout préparé à la reconnaître, puis à la transposer, avec la même exigence, dans le monde du business.",
@@ -85,10 +86,46 @@
         "p7": "Aujourd’hui, en Israël, on me sollicite pour les mêmes raisons : la fiabilité, la discrétion, cette capacité à faire avancer les choses, et à tenir la promesse du résultat là où tant d’autres se heurtent aux limites du réel. Seder Group n’est pas une idée posée sur le papier ; c’est l’aboutissement d’un parcours vécu, éprouvé, puis structuré — une alliance de compétences pensée pour servir, et pour accomplir, au plus haut niveau.",
         "p8": "Dans le monde artistique, beaucoup de talents s’épuisent faute de structure.",
         "p9": "Dans le monde du business, beaucoup de dirigeants réussissent mais perdent leur âme et leur présence intérieure.",
-        "p10": "De cette tension naît Seder Group (סדר).",
+        "p10": "De cette vision naît Seder Group.",
+        "discoverMethod": "Découvrir La Méthode SEDER"
+    },
+    "MethodPage": {
+        "title": "La Méthode SEDER",
+        "subtitle": "L'union du cœur et de l'intellect.",
+        "philosophy": {
+            "title": "La Sagesse du Cœur",
+            "blocks": {
+                "tanya": {
+                    "heading": "Le Tanya et les deux forces de l'être",
+                    "text1": "Dans la pensée du Tanya, l’être humain est constitué de deux forces fondamentales : le cerveau (moaḥ) et le cœur (lev).",
+                    "text2": "Le cerveau représente l’intellect et la stratégie. Le cœur représente l’émotion et l’expression. Le Tanya enseigne que l’homme ne peut atteindre sa plénitude que lorsque ces deux dimensions sont unifiées et harmonisées.",
+                    "quote_hebrew": "מוח שליט על הלב",
+                    "quote_translation": "Le cerveau gouverne le cœur.",
+                    "text3": "Cependant, cette gouvernance ne signifie pas domination ou suppression. Elle signifie direction et harmonie. C’est précisément cette vision qui constitue la base de la SEDER Method."
+                },
+                "duality": {
+                    "heading": "L'Artiste et le Businessman",
+                    "text1": "Dans la vie moderne, ces deux dimensions prennent souvent la forme de deux archétypes : l’artiste (l’émotion, l’inspiration, la créativité) et le businessman (la structure, la stratégie, la réalisation).",
+                    "text2": "Ces deux forces sont souvent perçues comme opposées. Pourtant, selon la logique du Tanya, elles sont naturellement complémentaires.",
+                    "text3": "Lorsqu’un artiste possède uniquement la dimension émotionnelle, l'élan est là mais sans structure, la créativité risque de ne pas aboutir. À l’inverse, un homme qui ne développe que l’intellect peut construire des systèmes efficaces, mais sans la chaleur du cœur, son action manque de vie et de créativité."
+                },
+                "benoni": {
+                    "heading": "Le modèle du Benoni : L'équilibre dynamique",
+                    "text1": "Le Tanya propose le modèle du Benoni pour la majorité des hommes : ce n'est pas un homme moyen ni médiocre, mais un homme qui possède des forces opposées et qui sait les organiser. Il ne supprime pas ses impulsions, il apprend à les diriger.",
+                    "text2": "Le Benoni vit selon le principe de l'équilibre dynamique. Son cœur ressent profondément, mais son esprit sait orienter ces émotions vers une action constructive.",
+                    "text3": "La perfection ne réside pas dans l’absence de tension. Elle réside dans la capacité à maintenir un équilibre vivant entre l'inspiration et l'action."
+                },
+                "seder": {
+                    "heading": "La réponse SEDER",
+                    "text1": "La SEDER Method applique ce principe à la vie contemporaine. L'artiste apporte la vision, le businessman apporte l'organisation.",
+                    "text2": "Le mot SEDER signifie Ordre. La méthode propose de remettre de l’ordre entre les différentes forces de l’être humain. Lorsque l’inspiration, la pensée, le corps et l’action sont alignés, la réussite n'est plus un objectif, elle devient le résultat naturel de cet équilibre intérieur."
+                }
+            }
+        },
+        "quote": "« La réussite n’est pas un objectif. C’est le résultat naturel de l’ordre intérieur. »",
         "method": {
-            "title": "La Méthode SEDER",
-            "desc": "Au cœur de Seder Group, se trouve la Méthode SEDER, une philosophie de développement personnel et professionnel construite autour d’un modèle simple, mémorisable et progressif. Cette méthode se décompose en cinq piliers qui s’emboitent en harmonie les uns dans les autres à travers les initiales de SEDER.",
+            "title": "Les 5 Piliers fondateurs",
+            "desc": "Au cœur de Seder Group se trouve la Méthode SEDER, une philosophie de développement personnel et professionnel construite autour d’un modèle simple, mémorisable et progressif qui unit l'exigence du businessman à la flamme de l'artiste. Cette méthode s’emboite en harmonie à travers les initiales de SEDER.",
             "pillars": {
                 "s": {
                     "letter": "S",
@@ -111,38 +148,38 @@
                 "e2": {
                     "letter": "E",
                     "title": "Exécution",
-                    "desc": "L’exécution est le moment où la vision devient réelle. Elle implique structure, stratégie, organisation et constance.",
+                    "desc": "L’exécution est le moment où la vision devient réelle, propre au monde des affaires. Elle implique structure, stratégie, organisation et constance.",
                     "keywords": "Stratégie – Organisation – Action (Ichtdalout : faire sa part)"
                 },
                 "r": {
                     "letter": "R",
                     "title": "Résultat",
-                    "desc": "Lorsque tous les piliers sont alignés, la réussite n’est plus un hasard. Elle devient une conséquence naturelle. La réussite ne se construit pas directement. Elle est le résultat d’un alignement."
+                    "desc": "Lorsque tous les piliers sont alignés, la réussite n’est plus un hasard. Elle devient une conséquence naturelle découlant d'un ordre parfait."
                 }
             }
         },
         "applications": {
             "title": "Une méthode, plusieurs applications",
-            "desc": "La Méthode SEDER n’est pas limitée à un domaine particulier. Elle constitue une philosophie de vie qui peut s’appliquer à différents univers. Elle se décline ainsi au sein des pôles de Seder Group :",
+            "desc": "La Méthode SEDER n’est pas limitée à un domaine particulier. Elle constitue une philosophie de vie qui s’applique aux différentes verticales de Seder Group, où l'artiste et l'entrepreneur s'élèvent mutuellement :",
             "music": {
                 "title": "SEDER MUSIC",
-                "desc": "Développement artistique, musique et performance vocale. Avec notamment : R&D Records, le label musical du groupe."
+                "desc": "Développement artistique, musique et performance vocale. L'ordre et l'exécution au service du talent émotionnel. Avec notamment : R&D Records, le label musical du groupe."
             },
             "event": {
                 "title": "SEDER EVENT",
-                "desc": "Organisation et direction artistique d’événements."
+                "desc": "L'organisation millimétrée (business) au service d'un instant magique et inoubliable (art)."
             },
             "business": {
                 "title": "SEDER BUSINESS",
-                "desc": "Application de la méthode au leadership, à la communication et à la stratégie professionnelle."
+                "desc": "L'intuition, le réseau relationnel et l'écoute (art) appliqués à la stratégie, la négociation et l'évolution professionnelle (business)."
             }
         },
         "daily": {
             "title": "SEDER au quotidien",
-            "desc": "Seder Group propose concrètement trois niveaux d’accompagnement.",
+            "desc": "Seder Group propose concrètement trois niveaux d’accompagnement :",
             "level1": {
                 "title": "1. La Méthode",
-                "desc": "La Méthode SEDER est accessible à travers du contenu structuré :",
+                "desc": "Accessible à travers du contenu structuré :",
                 "list": [
                     "formations",
                     "conférences",
@@ -153,7 +190,7 @@
             },
             "level2": {
                 "title": "2. L’exécution premium",
-                "desc": "Au-delà de la théorie, nous accompagnons également nos clients dans la mise en application concrète de la méthode. Avec mon équipe, nous proposons des services premium dans différents domaines :",
+                "desc": "Au-delà de la théorie, un accompagnement terrain. Avec mon équipe, nous proposons des services premium :",
                 "list": [
                     "stratégie et accompagnement business",
                     "organisation d’événements",
@@ -163,29 +200,28 @@
                     "booking d’artistes",
                     "conciergerie et accompagnement personnalisé"
                 ],
-                "conclusion": "L’objectif n’est pas seulement d’enseigner une méthode. Il s’agit aussi d’aider à l’appliquer dans la réalité."
+                "conclusion": "L’objectif n’est pas seulement d’enseigner une méthode. Il s’agit de l’appliquer dans la réalité avec un niveau de qualité extrême."
             },
             "level3": {
                 "title": "3. Les expériences et produits",
-                "desc": "Seder Group développe également différents produits et expériences liés à la méthode :",
+                "desc": "Seder Group développe des produits pour consolider cette philosophie :",
                 "list": [
                     "voyages-conférences et séminaires",
                     "rencontres avec des mentors, entrepreneurs et intervenants inspirants",
                     "programmes de développement artistique et personnel",
-                    "produits liés à l’énergie du corps et à la vitalité (comme certaines gammes de compléments ou vitamines)"
+                    "produits liés à l’énergie du corps et à la vitalité (ex: compléments et vitamines)"
                 ],
-                "conclusion": "Ces initiatives visent à renforcer les différents piliers de la méthode : le corps, l’esprit, la discipline et l’expression afin de vous amener au résultat escompté."
+                "conclusion": "Renforcer le corps, l’esprit, la discipline et l’expression afin de vous amener au résultat escompté."
             }
         },
         "conclusion": {
-            "p1": "Pour Raphaël, l’artiste et l’entrepreneur ne sont pas opposés. Bien au contraire, ils sont deux expressions d’une même recherche :",
+            "p1": "Ces trois pôles d'activité se nourrissent l'un l'autre au sein de Seder Group pour une seule et même finalité :",
             "list": [
                 "Créer avec sens.",
                 "Diriger avec présence.",
                 "Agir avec discipline."
             ],
-            "p2": "La Méthode SEDER n’est pas une théorie abstraite. Elle est le fruit d’un parcours où l’art, la spiritualité, la voix, la discipline et l’action se rencontrent pour apporter une seule chose : un ordre intérieur capable de transformer la vision en réalité. Avec la méthode Seder, mettez de l'ordre dans votre vie.",
-            "quote2": "« La réussite n’est pas un objectif. C’est le résultat naturel de l’ordre intérieur. »"
+            "p2": "Avec la méthode Seder, mettez de l'ordre dans votre vie."
         }
     },
     "EventsPage": {

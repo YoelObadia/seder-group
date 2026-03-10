@@ -57,6 +57,7 @@
     "Navigation": {
         "home": "Hub",
         "about": "About",
+        "method": "The Method",
         "business": "Business",
         "events": "Events",
         "music": "Music"
@@ -72,19 +73,156 @@
     "AboutPage": {
         "title": "The Birth of Seder",
         "subtitle": "Seder was born from a word — and a path.",
-        "p1": "Beyond the acronym of my initials — Skouri David Raphaël — Seder (סדר) embodies a fundamental philosophy: that of Order. The idea that even what seems complex — a relationship, a decision, an event, a project — can become clear, structured, mastered. And above all: peaceful.",
+        "p1": "Beyond the acronym of my initials — Skouri David Raphaël — SEDER embodies a fundamental philosophy: that of Order.",
         "p2": "My journey was built on a dual requirement, at the highest level: artistic requirement and business requirement.",
-        "p3": "I am an artist, an Andalusian singer and Hazan of Moroccan origin and a performer for spiritual and folkloric events. And a great artist is never “simply” an artist: he already lives in rigor, precision, detail, mastery of emotion and execution. It is this artistic discipline that prepared me to understand excellence and then to transpose it into the business world.",
+        "sidebar_title": "ORIGINS",
+        "p3": "I am an artist, an Andalusian singer and Hazan of Moroccan origin, performing regularly at events with a spiritual and folkloric dimension. A great artist is never “simply” an artist. He lives in rigor, precision, attention to detail, mastery of emotion, and respect for execution. This discipline, patiently built, taught me what excellence is. It above all prepared me to recognize it, then to transpose it, with the same requirement, into the business world.",
         "artist_label": "Visit my artistic website.",
         "artist_link": "https://raphaelskouri.com",
-        "p4": "Because I was very present in the community, and because my relationships were naturally built in circles of influence, I was gradually entrusted with responsibilities that went far beyond the stage. I was asked to organize events (weddings, bar/bat mitzvahs, celebrations), to manage situations where everything had to be perfect, discreet, fluid. I was also entrusted with responsibilities related to real estate: apartments to manage, service providers to coordinate, decisions to take. And over time, I also took charge of everything related to hospitality, concierge services, and lifestyle: welcoming, foreseeing, securing, anticipating, ensuring that life was simple for very demanding people.",
-        "p5": "These experiences gave me a central competence: a real organizational capacity, forged in the field, in contact with very high standards — in events, hospitality, concierge services, and real estate.",
-        "p6": "I lived for several years in the United States, which expanded my network and strengthened my learning. Initially, these doors opened out of kindness: they saw me as an artist. Then the relationship became much deeper: I was given total trust, missions, decisions to make, sometimes even the management of entire teams during their travels. I learned business from people who succeeded — by integrating their method, their mentality, their standards.",
-        "p7": "In parallel, my place at the heart of the community also put me at the center of human dilemmas, sometimes very tense. I often played the role of mediator: calming, understanding, restoring trust, finding a fair outcome, and creating an agreement. This capacity led me to study and understand the psychology of relations, decisions, and power dynamics — a fundamental pillar of what I have become.",
-        "p8": "It is exactly this that gave birth to Seder: the rare synthesis between artistic excellence, business requirement, event organization, hospitality/lifestyle concierge, real estate, and mediation.",
-        "p9": "Today, in Israel, I am solicited for these same reasons: reliability, discretion, ability to move forward, and aptitude to deliver a result in contexts where many fail. Seder Group is not an idea: it is the culmination of a real experience, structured into a union capable of serving — and achieving — at the highest level.",
-        "sidebar_title": "ORIGINS",
-        "closing": "With Seder, bring order to your life."
+        "p4": "Over the years, my presence at the heart of the community — and the bonds of trust it creates — naturally expanded my role. Gradually, I was no longer expected just on stage: I was asked to carry, coordinate, and secure what played out around it. Responsibilities came, discreetly at first, then with increasing obviousness: organizing weddings, bar and bat mitzvahs, celebrations, in contexts where everything had to be impeccable, fluid, and deeply respectful.",
+        "p5": "I lived for several years in the United States, and this period expanded my network as much as it refined my perspective. Initially, some doors opened out of kindness: they saw the artist in me. Then the relationship deepened; trust was established. I was entrusted with missions, decisions, sometimes even the coordination of entire teams during travels. I thus learned business from successful people — observing their method, integrating their mentality, and understanding their standards.",
+        "p6": "Finally, my place within the community has confronted me, more than once, with delicate human situations. I often held the role of mediator: calming, understanding, restoring trust, and seeking a fair outcome. This experience led me to study the psychology of relationships, the mechanics of decisions, and the sometimes subtle balances of power — a pillar of what I have become, and what I build today.",
+        "quote1": "« Seder: the link between creativity, structure, mediation, and execution. »",
+        "p7": "Today, in Israel, I am solicited for the same reasons: reliability, discretion, the ability to move forward, and to keep the promise of the result where so many others hit the limits of reality. Seder Group is not an idea on paper; it is the culmination of a lived, proven, and structured journey — an alliance of skills designed to serve, and to accomplish, at the highest level.",
+        "p8": "In the artistic world, many talents exhaust themselves for lack of structure.",
+        "p9": "In the business world, many leaders succeed but lose their soul and inner presence.",
+        "p10": "From this vision, Seder Group is born.",
+        "discoverMethod": "Discover The SEDER Method"
+    },
+    "MethodPage": {
+        "title": "The SEDER Method",
+        "subtitle": "The union of heart and intellect.",
+        "philosophy": {
+            "title": "The Wisdom of the Heart",
+            "blocks": {
+                "tanya": {
+                    "heading": "The Tanya and the two forces of being",
+                    "text1": "In the philosophy of the Tanya, the human being consists of two fundamental forces: the mind (moaḥ) and the heart (lev).",
+                    "text2": "The mind represents intellect and strategy. The heart represents emotion and expression. The Tanya teaches that man can only reach fulfillment when these two dimensions are unified and harmonized.",
+                    "quote_hebrew": "מוח שליט על הלב",
+                    "quote_translation": "The mind rules the heart.",
+                    "text3": "However, this governance does not mean domination or suppression. It means direction and harmony. It is precisely this vision that forms the basis of the SEDER Method."
+                },
+                "duality": {
+                    "heading": "The Artist and the Businessman",
+                    "text1": "In modern life, these two dimensions often take the form of two archetypes: the artist (emotion, inspiration, creativity) and the businessman (structure, strategy, realization).",
+                    "text2": "These two forces are often perceived as opposites. Yet, according to the logic of the Tanya, they are naturally complementary.",
+                    "text3": "When an artist solely possesses the emotional dimension, the momentum is there, but without structure, creativity may fail to materialize. Conversely, a man who develops only the intellect can build efficient systems, but without the warmth of the heart, his actions lack life and creativity."
+                },
+                "benoni": {
+                    "heading": "The Benoni model: Dynamic equilibrium",
+                    "text1": "The Tanya proposes the Benoni model for the majority of men: he is neither a mediocre nor average man, but rather one who possesses opposing forces and knows how to organize them. He does not suppress his impulses; he learns to direct them.",
+                    "text2": "The Benoni lives by the principle of dynamic equilibrium. His heart feels deeply, but his mind knows how to channel these emotions into constructive action.",
+                    "text3": "Perfection does not lie in the absence of tension. It lies in the ability to maintain a living balance between inspiration and action."
+                },
+                "seder": {
+                    "heading": "The SEDER Answer",
+                    "text1": "The SEDER Method applies this principle to contemporary life. The artist brings the vision, the businessman brings the organization.",
+                    "text2": "The word SEDER means Order. The method proposes restoring order among the different human forces. When inspiration, thought, body, and action are aligned, success is no longer an objective—it becomes the natural result of this inner equilibrium."
+                }
+            }
+        },
+        "quote": "« Success is not a goal. It is the natural result of inner order. »",
+        "method": {
+            "title": "The 5 Foundation Pillars",
+            "desc": "At the core of Seder Group lies the SEDER Method, a philosophy of personal and professional development built around a simple, memorable, and progressive model that unites the businessman's exigency with the artist's flame. This method fits together in harmony through the initials of SEDER.",
+            "pillars": {
+                "s": {
+                    "letter": "S",
+                    "title": "Spirituality",
+                    "desc": "The foundation of the model. Spirituality represents inner grounding. Without solid values, no success can remain stable over time.",
+                    "keywords": "Torah – Ethics – Respect for others – Self-confidence – Trust in God"
+                },
+                "e1": {
+                    "letter": "E",
+                    "title": "Expression",
+                    "desc": "Expression is the capacity to convey a vision, persuade, and inspire. In the Seder Method, the voice is not merely an artistic tool: it becomes an instrument of leadership and presence.",
+                    "keywords": "Voice – Communication – Leadership – Negotiation – Charisma – Influence"
+                },
+                "d": {
+                    "letter": "D",
+                    "title": "Discipline",
+                    "desc": "Discipline represents the physical and mental capacity to carry a vision over time. It encompasses lifestyle, energy management, stress mastery, and inner stability.",
+                    "keywords": "Body – Energy – Vitality – Confidence"
+                },
+                "e2": {
+                    "letter": "E",
+                    "title": "Execution",
+                    "desc": "Execution is the moment the vision becomes real, characteristic of the business world. It involves structure, strategy, organization, and consistency.",
+                    "keywords": "Strategy – Organization – Action (Hishtadlut: doing one's part)"
+                },
+                "r": {
+                    "letter": "R",
+                    "title": "Result",
+                    "desc": "When all pillars are aligned, success is no longer a coincidence. It becomes a natural consequence stemming from perfect order."
+                }
+            }
+        },
+        "applications": {
+            "title": "One method, multiple applications",
+            "desc": "The SEDER Method is not confined to a single field. It is a life philosophy applied across Seder Group's various verticals, where the artist and the entrepreneur elevate one another:",
+            "music": {
+                "title": "SEDER MUSIC",
+                "desc": "Artistic development, music, and vocal performance. Order and execution serving emotional talent. Notably featuring: R&D Records, the group's music label."
+            },
+            "event": {
+                "title": "SEDER EVENT",
+                "desc": "Millimeter-precise orchestration (business) serving a magical and unforgettable moment (art)."
+            },
+            "business": {
+                "title": "SEDER BUSINESS",
+                "desc": "Intuition, relational networking, and listening (art) applied to strategy, negotiation, and professional evolution (business)."
+            }
+        },
+        "daily": {
+            "title": "SEDER every day",
+            "desc": "Seder Group concretely offers three levels of support:",
+            "level1": {
+                "title": "1. The Method",
+                "desc": "Accessible through structured content:",
+                "list": [
+                    "training sessions",
+                    "conferences",
+                    "educational programs",
+                    "personal and professional development content"
+                ],
+                "conclusion": "This content helps understand and integrate the method's principles into one's own life."
+            },
+            "level2": {
+                "title": "2. Premium Execution",
+                "desc": "Beyond theory, a field-based accompaniment. Alongside my team, we offer premium services:",
+                "list": [
+                    "business strategy and consulting",
+                    "event organization",
+                    "artistic direction",
+                    "vocal development",
+                    "music production",
+                    "artist booking",
+                    "concierge and personalized support"
+                ],
+                "conclusion": "The goal is not only to teach a method, but to apply it in reality with extreme quality."
+            },
+            "level3": {
+                "title": "3. Experiences & Products",
+                "desc": "Seder Group develops products to consolidate this philosophy:",
+                "list": [
+                    "travel-conferences and seminars",
+                    "meetings with mentors, entrepreneurs, and inspiring speakers",
+                    "artistic and personal development programs",
+                    "products tied to body energy and vitality (e.g., supplements and vitamins)"
+                ],
+                "conclusion": "Strengthening the body, mind, discipline, and expression to lead you to the desired result."
+            }
+        },
+        "conclusion": {
+            "p1": "These three core activities feed off each other within Seder Group for a single ultimate purpose:",
+            "list": [
+                "Create with meaning.",
+                "Lead with presence.",
+                "Act with discipline."
+            ],
+            "p2": "With the Seder method, bring order to your life."
+        }
     },
     "EventsPage": {
         "metadata": {

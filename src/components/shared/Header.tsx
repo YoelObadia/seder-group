@@ -50,6 +50,7 @@ export function Header({ locale }: { locale: string }) {
     const navLinks = [
         { href: '/', label: 'home' },
         { href: '/about', label: 'about' },
+        { href: '/method', label: 'method' },
         { href: '/music', label: 'music' },
         { href: '/events', label: 'events' },
         { href: '/business', label: 'business' },
