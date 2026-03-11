@@ -227,25 +227,45 @@ export default function MethodPage() {
                     </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                        {['music', 'event', 'business'].map((app, i) => (
-                            <motion.div
-                                key={app}
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true }}
-                                variants={fadeInUp}
-                                transition={{ delay: i * 0.1 }}
-                                className="text-center md:text-start"
-                            >
-                                <div className="w-12 h-1 bg-amber-500 mb-6 mx-auto md:mx-0" />
-                                <h3 className="text-2xl font-bold text-white mb-4 tracking-wide uppercase">
-                                    {t(`applications.${app}.title`)}
-                                </h3>
+                        {['music', 'event', 'business'].map((app, i) => {
+                            const isRtl = locale === 'he' || locale === 'ar';
+                            
+                            // On the desktop (LTR), DOM order is Music (left), Event (middle), Business (right). To read right-to-left "סדר", it should be Business=ס, Event=ד, Music=ר.
+                            // On mobile (LTR & RTL), DOM order is Music (top), Event (middle), Business (bottom). Top-to-bottom reading "סדר" should be Music=ס, Event=ד, Business=ר.
+                            // On desktop RTL, DOM order is natively reversed visually, so Music is on the right. Taking the mobile mapping (Music=ס) places 'ס' on the right, which works perfectly.
+                            const mobileLetter = i === 0 ? 'ס' : i === 1 ? 'ד' : 'ר';
+                            const desktopLtrLetter = i === 0 ? 'ר' : i === 1 ? 'ד' : 'ס';
+
+                            return (
+                                <motion.div
+                                    key={app}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true }}
+                                    variants={fadeInUp}
+                                    transition={{ delay: i * 0.1 }}
+                                    className="text-center md:text-start relative"
+                                >
+                                    <div className="w-12 h-1 bg-amber-500 mb-6 mx-auto md:mx-0" />
+                                    <div className="absolute -top-12 left-0 right-0 md:right-auto md:left-auto opacity-30 text-6xl font-serif text-amber-400 pointer-events-none select-none">
+                                        {isRtl ? (
+                                            mobileLetter
+                                        ) : (
+                                            <>
+                                                <span className="md:hidden">{mobileLetter}</span>
+                                                <span className="hidden md:inline">{desktopLtrLetter}</span>
+                                            </>
+                                        )}
+                                    </div>
+                                    <h3 className="relative z-10 text-2xl font-bold text-white mb-4 tracking-wide uppercase">
+                                        {t(`applications.${app}.title`)}
+                                    </h3>
                                 <p className="text-slate-300 leading-relaxed font-light">
                                     {t(`applications.${app}.desc`)}
                                 </p>
                             </motion.div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </section>
 
