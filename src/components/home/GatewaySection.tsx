@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Link, useRouter } from '@/i18n/routing';
+import { useRouter } from '@/i18n/routing';
 import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { verticals } from '@/data/verticals';
@@ -73,7 +73,7 @@ export function GatewaySection({ dict }: { dict: any }) {
                         />
 
                         {/* Overlay Gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80" />
+                        <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-80" />
 
 
 
@@ -88,7 +88,7 @@ export function GatewaySection({ dict }: { dict: any }) {
                                         src={item.logo}
                                         alt={item.id}
                                         fill
-                                        className="object-contain object-left-bottom rtl:object-right-bottom drop-shadow-lg"
+                                        className="object-contain object-bottom-left rtl:object-bottom-right drop-shadow-lg"
                                         sizes="(max-width: 768px) 160px, 320px"
                                     />
                                 </div>

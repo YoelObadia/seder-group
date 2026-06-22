@@ -41,7 +41,7 @@ export default function EventsClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-3xl md:text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight"
+                    className="text-3xl md:text-7xl font-serif font-medium mb-8 tracking-tight"
                 >
                     {t('title')}
                 </motion.h1>
@@ -100,7 +100,7 @@ export default function EventsClient() {
                 viewport={{ once: true }}
                 className="max-w-3xl mx-auto text-center text-lg md:text-xl text-slate-800 italic font-serif mb-24 leading-relaxed"
             >
-                "{t('conclusion')}"
+                &quot;{t('conclusion')}&quot;
             </motion.p>
 
             {/* CTA Section */}

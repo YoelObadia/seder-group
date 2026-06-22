@@ -35,7 +35,7 @@ function GlowingCounter({
 
     useEffect(() => {
         if (!isInView) return;
-        setIsAnimating(true);
+        requestAnimationFrame(() => setIsAnimating(true));
 
         const controls = animate(0, value, {
             duration,
@@ -75,7 +75,7 @@ function TypewriterQuote({ text }: { text: string }) {
     return (
         <div ref={ref} className="relative">
             <p className="text-xl md:text-2xl text-white/80 font-serif italic leading-relaxed">
-                <span className="text-gold text-3xl mr-2">"</span>
+                <span className="text-gold text-3xl mr-2">&quot;</span>
                 {words.map((word, i) => (
                     <motion.span
                         key={i}
@@ -91,7 +91,7 @@ function TypewriterQuote({ text }: { text: string }) {
                         {word}
                     </motion.span>
                 ))}
-                <span className="text-gold text-3xl ml-1">"</span>
+                <span className="text-gold text-3xl ml-1">&quot;</span>
             </p>
         </div>
     );
@@ -182,7 +182,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-[100dvh] lg:min-h-0 lg:h-[calc(100vh-80px)] pt-20 md:pt-24 pb-8 flex items-center justify-center overflow-hidden w-full max-w-[100vw]"
+            className="relative min-h-dvh lg:min-h-0 lg:h-[calc(100vh-80px)] pt-20 md:pt-24 pb-8 flex items-center justify-center overflow-hidden w-full max-w-[100vw]"
             style={{ background: BG_COLOR }}
         >
             {/* Background ambient glow */}
@@ -204,7 +204,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
                             style={{ y: smoothImageY }}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
-                            className="relative aspect-[3/4] w-[45%] sm:w-[40%] md:w-[35%] lg:w-[80%] xl:w-[70%] max-w-[280px] lg:max-w-none rounded-2xl overflow-hidden group cursor-pointer"
+                            className="relative aspect-3/4 w-[45%] sm:w-[40%] md:w-[35%] lg:w-[80%] xl:w-[70%] max-w-[280px] lg:max-w-none rounded-2xl overflow-hidden group cursor-pointer"
                         >
                             {/* Scanning Gold Border */}
                             <ScanningBorder />
@@ -230,7 +230,7 @@ export function FounderSection({ dict }: FounderSectionProps) {
                                 <FilmGrain />
 
                                 {/* Bottom gradient overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10" />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent z-10" />
 
                                 {/* Name & Role at bottom */}
                                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 z-20">

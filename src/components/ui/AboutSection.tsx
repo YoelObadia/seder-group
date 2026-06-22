@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
+
 import { useLocale } from 'next-intl';
 
 interface AboutSectionProps {
@@ -13,7 +13,7 @@ interface AboutSectionProps {
 }
 
 export function AboutSection({ title, description, image, inverted = false }: AboutSectionProps) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
+
     const locale = useLocale();
     const isRtl = locale === 'he';
 
@@ -36,7 +36,7 @@ export function AboutSection({ title, description, image, inverted = false }: Ab
                         <h2 className="text-4xl md:text-5xl font-serif font-medium text-slate-900 leading-tight">
                             {title}
                         </h2>
-                        <div className="h-0.5 w-16 bg-[var(--color-business)]" />
+                        <div className="h-0.5 w-16 bg-business" />
                         <p className="text-lg text-slate-600 leading-relaxed font-light">
                             {description}
                         </p>
@@ -48,7 +48,7 @@ export function AboutSection({ title, description, image, inverted = false }: Ab
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="flex-1 w-full aspect-[4/3] relative overflow-hidden rounded-sm"
+                        className="flex-1 w-full aspect-4/3 relative overflow-hidden rounded-sm"
                     >
                         {/* Using img for external consistency with other prompts, but structured for Image if available */}
                         <div

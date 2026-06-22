@@ -65,7 +65,7 @@ export function HeroSection({
                 </h1>
 
                 {/* 3. Elegant Separator - CSS Animation */}
-                <div className="w-24 h-[1px] bg-white/30 mb-8 animate-fade-in-up delay-200" />
+                <div className="w-24 h-px bg-white/30 mb-8 animate-fade-in-up delay-200" />
 
                 {/* 4. Subtitle - Client Side Text Reveal (Acceptable to be delayed slightly) */}
                 <div className="mb-4">

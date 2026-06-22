@@ -46,7 +46,7 @@ export default function MusicClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-3xl md:text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-white"
+                    className="text-3xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-white"
                 >
                     {t('title')}
                 </motion.h1>

@@ -4,7 +4,7 @@ export default function EventsLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div className="min-h-screen bg-[var(--color-events)] text-black">
+        <div className="min-h-screen bg-events text-black">
             <main className="w-full h-full">
                 {children}
             </main>

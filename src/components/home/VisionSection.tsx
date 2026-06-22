@@ -17,7 +17,7 @@ export function VisionSection({ dict }: { dict: any }) {
     const isRtl = locale === 'he';
 
     return (
-        <section className="relative w-full min-h-screen py-24 md:py-0 bg-[#0f172a] flex flex-col items-center justify-center overflow-hidden">
+        <section className="relative w-full min-h-screen py-24 md:py-0 bg-business flex flex-col items-center justify-center overflow-hidden">
             <div className="container mx-auto px-6 md:px-12 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 

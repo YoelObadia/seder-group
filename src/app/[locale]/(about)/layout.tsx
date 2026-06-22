@@ -11,7 +11,7 @@ export default function AboutLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div className="min-h-screen bg-[#0f172a] text-white">
+        <div className="min-h-screen bg-business text-white">
             <main className="container mx-auto px-4 py-8">
                 {children}
             </main>

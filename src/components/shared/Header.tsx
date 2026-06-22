@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect, MouseEvent } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link, usePathname, useRouter } from '@/i18n/routing';
+import { Link, usePathname } from '@/i18n/routing';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react'; // Globe removed
@@ -25,7 +25,7 @@ export function Header({ locale }: { locale: string }) {
 
     // Determine theme based on path (simple heuristic)
     const isBusiness = pathname.includes('/business');
-    const isMusic = pathname.includes('/music');
+
     const isEvents = pathname.includes('/events');
 
     // Dynamic styling
@@ -56,9 +56,7 @@ export function Header({ locale }: { locale: string }) {
         { href: '/business', label: 'business' },
     ];
 
-    function toggleLanguage(event: MouseEvent<HTMLButtonElement>): void {
-        throw new Error('Function not implemented.');
-    }
+
 
     // RTL Logic
     const isRtl = locale === 'he';

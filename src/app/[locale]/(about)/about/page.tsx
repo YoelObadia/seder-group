@@ -18,7 +18,7 @@ export default function AboutPage() {
     };
 
     return (
-        <div className="min-h-screen bg-[#0f172a] text-white pt-32 pb-24 px-4 md:px-8 overflow-hidden" dir={isRtl ? 'rtl' : 'ltr'}>
+        <main className="min-h-screen bg-business text-white pt-32 pb-24 px-4 md:px-8 overflow-hidden" dir={isRtl ? 'rtl' : 'ltr'}>
             {/* Background Texture */}
             <div className="fixed inset-0 pointer-events-none opacity-[0.03]"
                 style={{ backgroundImage: 'url("/images/noise.png")' }}
@@ -45,7 +45,7 @@ export default function AboutPage() {
                             style={{ fontFamily: 'var(--font-heebo), sans-serif' }}>
                             {t('subtitle')}
                         </p>
-                        <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto" />
+                        <div className="w-16 h-0.5 bg-linear-to-r from-transparent via-amber-400 to-transparent mx-auto" />
                     </motion.div>
                 </header>
 
@@ -172,7 +172,7 @@ export default function AboutPage() {
                         transition={{ delay: 0.5 }}
                         className="pt-16"
                     >
-                        <Link href={`/${locale}/method`} className="inline-flex items-center gap-4 bg-amber-400 text-[#0f172a] hover:bg-amber-300 transition-colors duration-300 px-8 py-4 rounded-sm font-bold tracking-wide uppercase group">
+                        <Link href={`/${locale}/method`} className="inline-flex items-center gap-4 bg-amber-400 text-business hover:bg-amber-300 transition-colors duration-300 px-8 py-4 rounded-sm font-bold tracking-wide uppercase group">
                             {t('discoverMethod')}
                             <span className={cn(
                                 "transition-transform duration-300 group-hover:translate-x-1",
@@ -184,6 +184,6 @@ export default function AboutPage() {
                     </motion.div>
                 </section>
             </div>
-        </div>
+        </main>
     );
 }

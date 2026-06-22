@@ -80,7 +80,7 @@ export function LanguageSelector({ className, forceDark }: LanguageSelectorProps
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 8, scale: 0.95 }}
                         transition={{ duration: 0.15, ease: "easeOut" }}
-                        className="absolute top-full mt-2 end-0 w-40 bg-slate-900/95 backdrop-blur-xl border border-white/10 cursor-pointer rounded-xl overflow-hidden shadow-2xl z-[100] py-1"
+                        className="absolute top-full mt-2 end-0 w-40 bg-slate-900/95 backdrop-blur-xl border border-white/10 cursor-pointer rounded-xl overflow-hidden shadow-2xl z-100 py-1"
                     >
                         {languages.map((lang) => (
                             <button

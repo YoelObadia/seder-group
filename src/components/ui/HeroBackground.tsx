@@ -164,7 +164,6 @@ void main() {
 // --- 2. LE COMPOSANT 3D ---
 
 const GradientPlane = ({ geometryArgs }: { geometryArgs: [number, number, number, number] }) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const meshRef = useRef<THREE.Mesh>(null);
 
     const uniforms = useMemo(
@@ -207,7 +206,7 @@ export function HeroBackground() {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        setMounted(true);
+        requestAnimationFrame(() => setMounted(true));
         const checkMobile = () => {
             setIsMobile(window.innerWidth < 768);
         };

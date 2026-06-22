@@ -25,7 +25,7 @@ export default function MethodPage() {
     };
 
     return (
-        <div className="min-h-screen bg-[#0f172a] text-white pt-32 pb-24 px-4 md:px-8 overflow-hidden" dir={isRtl ? 'rtl' : 'ltr'}>
+        <div className="min-h-screen bg-business text-white pt-32 pb-24 px-4 md:px-8 overflow-hidden" dir={isRtl ? 'rtl' : 'ltr'}>
             {/* Background Texture */}
             <div className="fixed inset-0 pointer-events-none opacity-[0.03]"
                 style={{ backgroundImage: 'url("/images/noise.png")' }}
@@ -52,7 +52,7 @@ export default function MethodPage() {
                             style={{ fontFamily: 'var(--font-heebo), sans-serif' }}>
                             {t('subtitle')}
                         </p>
-                        <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto" />
+                        <div className="w-16 h-0.5 bg-linear-to-r from-transparent via-amber-400 to-transparent mx-auto" />
                     </motion.div>
                 </header>
 
@@ -64,7 +64,7 @@ export default function MethodPage() {
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                                 {t('philosophy.title')}
                             </h2>
-                            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto" />
+                            <div className="w-24 h-1 bg-linear-to-r from-transparent via-amber-400 to-transparent mx-auto" />
                         </div>
 
                         {/* Block 1: Tanya */}
@@ -169,7 +169,7 @@ export default function MethodPage() {
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             {t('method.title')}
                         </h2>
-                        <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-6" />
+                        <div className="w-24 h-1 bg-linear-to-r from-transparent via-amber-400 to-transparent mx-auto mb-6" />
                         <p className="text-xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">
                             {t('method.desc')}
                         </p>
@@ -182,7 +182,7 @@ export default function MethodPage() {
                         viewport={{ once: true, margin: "-10%" }}
                         className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6"
                     >
-                        {['s', 'e1', 'd', 'e2', 'r'].map((pillarKey, i) => (
+                        {['s', 'e1', 'd', 'e2', 'r'].map((pillarKey) => (
                             <motion.div
                                 key={pillarKey}
                                 variants={fadeInUp}
@@ -194,7 +194,7 @@ export default function MethodPage() {
                                 <h3 className="text-2xl font-bold text-white mb-4">
                                     {t(`method.pillars.${pillarKey}.title`)}
                                 </h3>
-                                <p className="text-slate-300 font-light leading-relaxed mb-6 flex-grow">
+                                <p className="text-slate-300 font-light leading-relaxed mb-6 grow">
                                     {t(`method.pillars.${pillarKey}.desc`)}
                                 </p>
                                 {t.has(`method.pillars.${pillarKey}.keywords`) && (
@@ -287,7 +287,7 @@ export default function MethodPage() {
                     </motion.div>
 
                     <div className="space-y-12">
-                        {['level1', 'level2', 'level3'].map((level, i) => (
+                        {['level1', 'level2', 'level3'].map((level) => (
                             <motion.div
                                 key={level}
                                 initial="hidden"
@@ -340,7 +340,7 @@ export default function MethodPage() {
                         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-lg text-amber-400 font-serif">
                             {(t.raw('conclusion.list') as string[]).map((item, idx) => (
                                 <div key={idx} className="flex items-center">
-                                    {idx > 0 && <span className="hidden md:inline-block w-8 h-[1px] bg-amber-400/30 mx-6" />}
+                                    {idx > 0 && <span className="hidden md:inline-block w-8 h-px bg-amber-400/30 mx-6" />}
                                     <span>{item}</span>
                                 </div>
                             ))}

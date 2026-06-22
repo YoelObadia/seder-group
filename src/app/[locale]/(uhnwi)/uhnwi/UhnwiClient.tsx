@@ -39,7 +39,7 @@ export default function UhnwiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-3xl md:text-5xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-[#dbb369]"
+                    className="text-3xl md:text-7xl font-serif font-medium mb-8 tracking-tight text-[#dbb369]"
                 >
                     {t('title')}
                 </motion.h1>
@@ -59,7 +59,7 @@ export default function UhnwiClient() {
 
             {/* Promise Section */}
             <section className="max-w-3xl mx-auto text-center mb-24 relative">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-gradient-to-b from-transparent via-[#dbb369] to-transparent opacity-50" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-linear-to-b from-transparent via-[#dbb369] to-transparent opacity-50" />
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export default function UhnwiClient() {
                 viewport={{ once: true }}
                 className="max-w-3xl mx-auto text-center text-lg md:text-xl text-[#dbb369] italic font-serif mb-24 leading-relaxed"
             >
-                "{t('conclusion')}"
+                &quot;{t('conclusion')}&quot;
             </motion.p>
 
             {/* CTA Section */}
@@ -99,7 +99,7 @@ export default function UhnwiClient() {
                         description={t(`brands.${mainBrand.description}`)}
                         url={mainBrand.url}
                         image={mainBrand.image}
-                        className="shadow-2xl shadow-[#dbb369]/10 aspect-[3/4] border border-[#dbb369]/20"
+                        className="shadow-2xl shadow-[#dbb369]/10 aspect-3/4 border border-[#dbb369]/20"
                     />
                 </motion.div>
             </section>

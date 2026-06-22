@@ -1,12 +1,11 @@
-import { getTranslations, getMessages } from 'next-intl/server';
+import { getMessages } from 'next-intl/server';
 import { HeroSection } from '@/components/ui/HeroSection';
 import { VisionSection } from '@/components/home/VisionSection';
 import { FounderSection } from '@/components/home/FounderSection';
 import { GatewaySection } from '@/components/home/GatewaySection';
 
 export default async function HomePage() {
-    // Fetch translations on the server
-    const t = await getTranslations('HomePage');
+
     const mainDict = await getMessages();
 
     return (
